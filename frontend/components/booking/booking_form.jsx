@@ -182,11 +182,11 @@ class BookingForm extends React.Component{
   render(){
 
     if (this.props.spot){
-    const { photoUrls, title, price } = this.props.spot;
+    const {  title, price } = this.props.spot;
     const { num_guests, adults, children, infants, open } = this.state;
     debugger
     let dropdownFlag = open ? dropdownFlag = 'OPEN' : dropdownFlag = ''
-    const photo = photoUrls.length > 1 ? photoUrls[1] : photoUrls[0]
+    // const photo = photoUrls.length > 1 ? photoUrls[1] : photoUrls[0]
     
     
 

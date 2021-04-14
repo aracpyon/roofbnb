@@ -265,3 +265,168 @@ Migrating to CreateBookings (20210414051145)
   ↳ db/seeds.rb:147
   [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
   ↳ db/seeds.rb:9
+Started GET "/" for ::1 at 2021-04-14 03:33:26 -0400
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/aracho/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/aracho/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/aracho/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.5/lib/rails/templates/rails/welcome/index.html.erb (8.4ms)
+Completed 200 OK in 63ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-04-14 03:34:30 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 2829ms (Views: 2821.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-04-14 03:36:06 -0400
+  [1m[35m (7.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/aracho/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 2673ms (Views: 2656.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-04-14 03:36:51 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 877ms (Views: 867.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-04-14 03:37:56 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 620ms (Views: 605.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/spots" for ::1 at 2021-04-14 03:37:57 -0400
+Processing by Api::SpotsController#index as JSON
+  Rendering api/spots/index.json.jbuilder
+  [1m[36mSpot Load (2.4ms)[0m  [1m[34mSELECT "spots".* FROM "spots"[0m
+  ↳ app/views/api/spots/index.json.jbuilder:1
+  Rendered api/spots/_spot.json.jbuilder (0.5ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (1.1ms)
+  Rendered api/spots/_spot.json.jbuilder (0.7ms)
+  Rendered api/spots/_spot.json.jbuilder (7.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.1ms)
+  Rendered api/spots/index.json.jbuilder (157.1ms)
+Completed 200 OK in 220ms (Views: 156.0ms | ActiveRecord: 24.4ms)
+
+
+Started GET "/" for ::1 at 2021-04-14 03:40:30 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 1412ms (Views: 1402.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/spots" for ::1 at 2021-04-14 03:40:32 -0400
+Processing by Api::SpotsController#index as JSON
+  Rendering api/spots/index.json.jbuilder
+  [1m[36mSpot Load (34.2ms)[0m  [1m[34mSELECT "spots".* FROM "spots"[0m
+  ↳ app/views/api/spots/index.json.jbuilder:1
+  Rendered api/spots/_spot.json.jbuilder (0.9ms)
+  Rendered api/spots/_spot.json.jbuilder (0.1ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.1ms)
+  Rendered api/spots/_spot.json.jbuilder (0.1ms)
+  Rendered api/spots/index.json.jbuilder (79.5ms)
+Completed 200 OK in 107ms (Views: 72.0ms | ActiveRecord: 34.2ms)
+
+
+Started GET "/" for ::1 at 2021-04-14 03:41:37 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 2634ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::Rails::Helper::AssetNotFound - The asset "k_logo.png" is not present in the asset pipeline.:
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__2621183017289679827_70147460977500'
+
+Started POST "/__better_errors/9cb1e081113111ce/variables" for ::1 at 2021-04-14 03:41:40 -0400
+Started GET "/" for ::1 at 2021-04-14 03:42:11 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 229ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::Rails::Helper::AssetNotFound - The asset "down_arrow.png" is not present in the asset pipeline.:
+  app/views/layouts/application.html.erb:19:in `_app_views_layouts_application_html_erb__2621183017289679827_70147484525120'
+
+Started POST "/__better_errors/d4c276f1cd7ee0c4/variables" for ::1 at 2021-04-14 03:42:11 -0400
+Started GET "/" for ::1 at 2021-04-14 03:42:45 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 2057ms (Views: 2048.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/spots" for ::1 at 2021-04-14 03:42:48 -0400
+Processing by Api::SpotsController#index as JSON
+  Rendering api/spots/index.json.jbuilder
+  [1m[36mSpot Load (51.9ms)[0m  [1m[34mSELECT "spots".* FROM "spots"[0m
+  ↳ app/views/api/spots/index.json.jbuilder:1
+  Rendered api/spots/_spot.json.jbuilder (1.0ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.1ms)
+  Rendered api/spots/_spot.json.jbuilder (0.1ms)
+  Rendered api/spots/_spot.json.jbuilder (0.1ms)
+  Rendered api/spots/_spot.json.jbuilder (0.1ms)
+  Rendered api/spots/index.json.jbuilder (70.5ms)
+Completed 200 OK in 89ms (Views: 36.9ms | ActiveRecord: 51.9ms)
+
+
+Started GET "/" for ::1 at 2021-04-14 03:44:21 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 1449ms (Views: 1442.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-04-14 03:44:29 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 151ms (Views: 146.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-04-14 03:44:52 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 234ms (Views: 227.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-04-14 03:45:08 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 1243ms (Views: 1236.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/spots" for ::1 at 2021-04-14 03:45:11 -0400
+Processing by Api::SpotsController#index as JSON
+  Rendering api/spots/index.json.jbuilder
+  [1m[36mSpot Load (83.2ms)[0m  [1m[34mSELECT "spots".* FROM "spots"[0m
+  ↳ app/views/api/spots/index.json.jbuilder:1
+  Rendered api/spots/_spot.json.jbuilder (1.6ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.5ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.4ms)
+  Rendered api/spots/index.json.jbuilder (106.2ms)
+Completed 200 OK in 135ms (Views: 51.6ms | ActiveRecord: 83.2ms)
+
+

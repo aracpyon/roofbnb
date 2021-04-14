@@ -19,7 +19,7 @@ class SpotIndexItem extends React.Component {
   render(){
     // debugger
     const { title, city, price, description } = this.props.spot;
-    const photos = this.props.spot.photoUrls;
+    // const photos = this.props.spot.photoUrls;
     const first = 1;
 
     return (
@@ -28,7 +28,7 @@ class SpotIndexItem extends React.Component {
      
         <div className="section1-index-item" onClick={this.handleClick}>
           <div className="section1-photo-container">
-              <img className="section1-photo" src={photos[first]} />
+              <img className="section1-photo" src={window.photowall} />
           </div>
             
           <div className="spot-index-info">

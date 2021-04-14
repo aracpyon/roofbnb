@@ -5,11 +5,11 @@ import { createReview,fetchSpots, fetchSpot, createSpot, updateSpot, fetchSearch
 import { fetchBookings, fetchBooking, createBooking, updateBooking, destroyBooking } from './actions/booking_actions';
 import configureStore from './store/store';
 import Root from './components/root';
-debugger
+
 document.addEventListener("DOMContentLoaded", () => {
   const root = document.getElementById("root");
   // const store = configureStore();
-  debugger
+  
   let store;
   if (window.currentUser) {
     const preloadedState = {

@@ -15,12 +15,12 @@ class SearchIndexItem extends React.Component{
   }
 
   render(){
-    const { title, description, photoUrls, price } = this.props.spot;
+    const { title, description, price } = this.props.spot;
 
     return(
       <div className="search-index-items" onClick={this.handleClick}>
         <div className="search-photo-container">
-          <img className="search-photo" src={photoUrls[1]} />
+          <img className="search-photo" src={window.photowall} />
         </div>
 
         <div className="search-index-info">
