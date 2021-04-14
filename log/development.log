@@ -1,0 +1,267 @@
+  [1m[35m (8.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (27.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (221.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "roofbnb_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (97.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "roofbnb_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (443.6ms)[0m  [1m[35mCREATE DATABASE "roofbnb_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (129.9ms)[0m  [1m[35mCREATE DATABASE "roofbnb_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (57.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (26.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2157328172334310185)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20210414050608)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(2157328172334310185)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2157328172334310185)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20210414050608)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (41.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying NOT NULL, "email" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210414050608_create_users.rb:3
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/migrate/20210414050608_create_users.rb:12
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210414050608"]]
+  ↳ bin/rails:9
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateSpots (20210414050924)
+  [1m[35m (11.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (18.5ms)[0m  [1m[35mCREATE TABLE "spots" ("id" bigserial primary key, "title" character varying NOT NULL, "address" character varying NOT NULL, "city" character varying NOT NULL, "lat" float NOT NULL, "lng" float NOT NULL, "description" text NOT NULL, "price" float NOT NULL, "host_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210414050924_create_spots.rb:3
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE  INDEX  "index_spots_on_host_id" ON "spots"  ("host_id")[0m
+  ↳ db/migrate/20210414050924_create_spots.rb:16
+  [1m[36mActiveRecord::SchemaMigration Create (4.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210414050924"]]
+  ↳ bin/rails:9
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateReviews (20210414051128)
+  [1m[35m (6.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (24.8ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" bigserial primary key, "body" text NOT NULL, "rating" float NOT NULL, "spot_id" integer NOT NULL, "author_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210414051128_create_reviews.rb:3
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE  INDEX  "index_reviews_on_spot_id" ON "reviews"  ("spot_id")[0m
+  ↳ db/migrate/20210414051128_create_reviews.rb:12
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE  INDEX  "index_reviews_on_author_id" ON "reviews"  ("author_id")[0m
+  ↳ db/migrate/20210414051128_create_reviews.rb:13
+  [1m[36mActiveRecord::SchemaMigration Create (3.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210414051128"]]
+  ↳ bin/rails:9
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateBookings (20210414051145)
+  [1m[35m (5.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (20.6ms)[0m  [1m[35mCREATE TABLE "bookings" ("id" bigserial primary key, "start_date" timestamp NOT NULL, "end_date" timestamp NOT NULL, "num_guests" integer NOT NULL, "spot_id" integer NOT NULL, "guest_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210414051145_create_bookings.rb:3
+  [1m[35m (16.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_bookings_on_guest_id_and_spot_id" ON "bookings"  ("guest_id", "spot_id")[0m
+  ↳ db/migrate/20210414051145_create_bookings.rb:13
+  [1m[36mActiveRecord::SchemaMigration Create (7.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210414051145"]]
+  ↳ bin/rails:9
+  [1m[35m (9.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (3.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (7.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-04-14 07:24:11.200745"], ["updated_at", "2021-04-14 07:24:11.200745"]]
+  ↳ bin/rails:9
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(2157328172334310185)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mSpot Load (0.9ms)[0m  [1m[34mSELECT "spots".* FROM "spots"[0m
+  ↳ db/seeds.rb:11
+  [1m[36mBooking Load (0.8ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ db/seeds.rb:12
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "aracpyon@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mUser Create (3.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Ara C Pyon"], ["email", "aracpyon@gmail.com"], ["password_digest", "$2a$12$aVj62UZDowQz9fPv49noWeP.rB.DDwgf/20W.kjiB3FYEa7qXakPu"], ["session_token", "xMuAfPzvZnGQcDdu7fSU4w"], ["created_at", "2021-04-14 07:24:21.505033"], ["updated_at", "2021-04-14 07:24:21.505033"]]
+  ↳ db/seeds.rb:18
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "akeem@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Akeem Nicholas"], ["email", "akeem@aa.com"], ["password_digest", "$2a$12$MtNXqjFejljMpaDXgfPS4uJd1ZGEwFuuF4g/avCY/gAu2HnP5G0g."], ["session_token", "X-dCgzS6S4_C57A29f20iw"], ["created_at", "2021-04-14 07:24:21.801539"], ["updated_at", "2021-04-14 07:24:21.801539"]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "albert@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:20
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Albert Lee"], ["email", "albert@aa.com"], ["password_digest", "$2a$12$LCx9aDeTSZCvfV1NTqncmOhfeUyjLnA.tEdQR2duLY4CqLgAqJrUm"], ["session_token", "gp_q8_xAIKPAMpuLRVbhKQ"], ["created_at", "2021-04-14 07:24:22.068897"], ["updated_at", "2021-04-14 07:24:22.068897"]]
+  ↳ db/seeds.rb:20
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "phong@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Phong Ngo"], ["email", "phong@aa.com"], ["password_digest", "$2a$12$3glAi9GIxrsvRvJ1NNo8Yee6E3zTZBVAhd17j50UlYxYrdulQMfpS"], ["session_token", "Ot2e6nwCrsmDicH89hYuSQ"], ["created_at", "2021-04-14 07:24:22.341084"], ["updated_at", "2021-04-14 07:24:22.341084"]]
+  ↳ db/seeds.rb:21
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jay@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Jay Higgs"], ["email", "jay@aa.com"], ["password_digest", "$2a$12$eFzrR6fbViXKBLGvLg6sDewac5K6E3hSPqbkYRYaaP69sKIXR1ODa"], ["session_token", "tsviN32aSB51DJSTejGRjQ"], ["created_at", "2021-04-14 07:24:22.648001"], ["updated_at", "2021-04-14 07:24:22.648001"]]
+  ↳ db/seeds.rb:22
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lorry@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Lawrence Nicastro"], ["email", "lorry@aa.com"], ["password_digest", "$2a$12$ilIgjaEwpRZfmCOtxqPrt.ce.4pIqHExucj3sE1F9JxPpd6ESmx7a"], ["session_token", "sgaRhW5ljiNLZ_EYTOMLRA"], ["created_at", "2021-04-14 07:24:22.916742"], ["updated_at", "2021-04-14 07:24:22.916742"]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "paul@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Paul Tan"], ["email", "paul@aa.com"], ["password_digest", "$2a$12$VVctH9qmIocKncyg7W7IuePQZ2Tk1iK3KrTuejiz81UUIcO6oq4RC"], ["session_token", "e948Kjtd2WcRge_so4QudA"], ["created_at", "2021-04-14 07:24:23.185939"], ["updated_at", "2021-04-14 07:24:23.185939"]]
+  ↳ db/seeds.rb:24
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "harry@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:25
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Harry Zec"], ["email", "harry@aa.com"], ["password_digest", "$2a$12$ozSgkAqly77iI59avfjAE.T8ldDORSyRjL.ia2XpdS5wWS.d/7qKi"], ["session_token", "4kI6kvYy7qdoWAwNZSadrQ"], ["created_at", "2021-04-14 07:24:23.451264"], ["updated_at", "2021-04-14 07:24:23.451264"]]
+  ↳ db/seeds.rb:25
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kai@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Kai Ho"], ["email", "kai@aa.com"], ["password_digest", "$2a$12$JN2RH6OMn14x6uJlbb9RPu1NkZf5oo.k1S.BEpAcLAFdufadrUfhq"], ["session_token", "cOCrHkoG7yq1gkMhP8Zbbw"], ["created_at", "2021-04-14 07:24:23.718309"], ["updated_at", "2021-04-14 07:24:23.718309"]]
+  ↳ db/seeds.rb:26
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "rich@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Rich Lim"], ["email", "rich@aa.com"], ["password_digest", "$2a$12$rwfDA.BsHyzys5tpYurA4ex4M2eGIooHYkBe9uuAFlcH52mgDNZdu"], ["session_token", "T8U4L7hn_daZYuMzpdO6Nw"], ["created_at", "2021-04-14 07:24:23.983496"], ["updated_at", "2021-04-14 07:24:23.983496"]]
+  ↳ db/seeds.rb:27
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "julian@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:28
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Julian Knoche"], ["email", "julian@aa.com"], ["password_digest", "$2a$12$pHIHXWJdXM.8YASVSnkRRe9mLyUbvTEGqPYtffw.Z0yxsFDfbfRw6"], ["session_token", "NJ0CGWrU8ngrIehPhyL_JA"], ["created_at", "2021-04-14 07:24:24.249685"], ["updated_at", "2021-04-14 07:24:24.249685"]]
+  ↳ db/seeds.rb:28
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jesse@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Jesse Colligan"], ["email", "jesse@aa.com"], ["password_digest", "$2a$12$tRkkjyThILTJrYFvloBQIuWxek7CaRhUT/dcpTtQ1si7CvHGdsjH."], ["session_token", "8Slh3Bm90_zFnfWvt7KhHw"], ["created_at", "2021-04-14 07:24:24.513771"], ["updated_at", "2021-04-14 07:24:24.513771"]]
+  ↳ db/seeds.rb:29
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jason@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:30
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Jason Wang"], ["email", "jason@aa.com"], ["password_digest", "$2a$12$MNGoHT.hoDlPUBqFmFCleOA/YYWAaNvXDgfkUPyfIB94..17llg/G"], ["session_token", "i6D0kN_Ym2grjpAPpzip6g"], ["created_at", "2021-04-14 07:24:24.786471"], ["updated_at", "2021-04-14 07:24:24.786471"]]
+  ↳ db/seeds.rb:30
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "raz@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Raz Efron"], ["email", "raz@aa.com"], ["password_digest", "$2a$12$zyWMBf/4i9XBoNMY1Zy2yuFSyAb0QLGkZJyTAXfkCRg4ZPt8/m412"], ["session_token", "Il16R28VlDrqahrlfDa7Pg"], ["created_at", "2021-04-14 07:24:25.051682"], ["updated_at", "2021-04-14 07:24:25.051682"]]
+  ↳ db/seeds.rb:31
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "rob@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Rob Romano"], ["email", "rob@aa.com"], ["password_digest", "$2a$12$0J1VA4aPlLNT5IgpNf7Yne3HsnGd2zal9k/kuEc98aGs/Hz0B09p2"], ["session_token", "ogOcs5Jq4TNnXxv21u9_pg"], ["created_at", "2021-04-14 07:24:25.317534"], ["updated_at", "2021-04-14 07:24:25.317534"]]
+  ↳ db/seeds.rb:32
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "antonio@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:33
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Antonio Cuccu"], ["email", "antonio@aa.com"], ["password_digest", "$2a$12$QJNp8tEgGGrAosHg4VPeB.E/uUI24QmiH28lxrumrYnTuV8j909q2"], ["session_token", "zM9ZwUYdPw7709FFL0mR1g"], ["created_at", "2021-04-14 07:24:25.590145"], ["updated_at", "2021-04-14 07:24:25.590145"]]
+  ↳ db/seeds.rb:33
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "chris@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Chris Garthright"], ["email", "chris@aa.com"], ["password_digest", "$2a$12$0jSD/WAxegxzQi0lNeW1Fuez.hYMwLS51Jw3WG1KSWh/FdjEOqYyG"], ["session_token", "mdw9HZeEFfdckb_ujgpQxg"], ["created_at", "2021-04-14 07:24:25.856997"], ["updated_at", "2021-04-14 07:24:25.856997"]]
+  ↳ db/seeds.rb:34
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "danny@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:35
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Danny Yoo"], ["email", "danny@aa.com"], ["password_digest", "$2a$12$tL6Oc5tQmOZ4rCmcq8xBJOldFnj9DtYO98pLyCMx9ShbsJU1UeKUO"], ["session_token", "djdyJsJB3dUXyVWOlCFERw"], ["created_at", "2021-04-14 07:24:26.122701"], ["updated_at", "2021-04-14 07:24:26.122701"]]
+  ↳ db/seeds.rb:35
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "calvin@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Calvin Curnuck"], ["email", "calvin@aa.com"], ["password_digest", "$2a$12$24qTf4X8.FucG15mhYATAeZ0yXVSeQ0Fb7KdECOaiLXHL/6DhIrZ."], ["session_token", "vKaeve3u8QSm4uk7pfK29g"], ["created_at", "2021-04-14 07:24:26.391180"], ["updated_at", "2021-04-14 07:24:26.391180"]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[36mSpot Create (0.9ms)[0m  [1m[32mINSERT INTO "spots" ("title", "address", "city", "lat", "lng", "description", "price", "host_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "The Metropolitan Museum of Art: Night with Masters' Paintings"], ["address", "1000 5th Ave, New York, NY 10028"], ["city", "New York"], ["lat", 40.7794], ["lng", -73.9632], ["description", "The Metropolitan Museum of Art of New York City, colloquially 'the Met', is the largest art museum in the United States. With 6,953,927 visitors to its three locations in 2018, it was the third most visited art museum in the world. Its permanent collection contains over two million works, divided among 17 curatorial departments. The main building at 1000 Fifth Avenue, along the Museum Mile on the eastern edge of Central Park in Manhattan's Upper East Side, is by area one of the world's largest art galleries. A much smaller second location, The Cloisters at Fort Tryon Park in Upper Manhattan, contains an extensive collection of art, architecture, and artifacts from medieval Europe. On March 18, 2016, the museum opened the Met Breuer museum along Madison Avenue on the Upper East Side; it extends the museum's modern and contemporary art program."], ["price", 200.0], ["host_id", 1], ["created_at", "2021-04-14 07:24:26.428533"], ["updated_at", "2021-04-14 07:24:26.428533"]]
+  ↳ db/seeds.rb:40
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:49
+  [1m[36mSpot Create (0.5ms)[0m  [1m[32mINSERT INTO "spots" ("title", "address", "city", "lat", "lng", "description", "price", "host_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "NYC Anime: Best Place for Anime Lovers"], ["address", "429 11th Ave, New York, NY 10001"], ["city", "New York"], ["lat", 40.7578], ["lng", -74.0023], ["description", "Anime NYC is an annual three-day anime convention held during November at the Jacob K. Javits Convention Center in New York City. The convention typically offers arcade games, an artist alley, concerts, manga library (Carolina Manga Library), masquerade, panels, screenings, vendors, and video and card games. Anime NYC offered 100 hours of programming in 2017. Anime NYC's organizer LeftField Media created the New York Comic Con and also runs Washington DC’s Awesome Con."], ["price", 300.0], ["host_id", 2], ["created_at", "2021-04-14 07:24:26.432630"], ["updated_at", "2021-04-14 07:24:26.432630"]]
+  ↳ db/seeds.rb:49
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:58
+  [1m[36mSpot Create (0.9ms)[0m  [1m[32mINSERT INTO "spots" ("title", "address", "city", "lat", "lng", "description", "price", "host_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Amazon: A Great Night with The World Biggest Commercial Website"], ["address", "410 Terry Ave N, Seattle 98109, WA"], ["city", "Seattle"], ["lat", 47.608013], ["lng", -122.335167], ["description", "Amazon.com, Inc., is an American multinational technology company based in Seattle that focuses on e-commerce, cloud computing, digital streaming, and artificial intelligence. It is considered one of the Big Four tech companies, along with Google, Apple, and Facebook. \n                        Amazon is known for its disruption of well-established industries through technological innovation and mass scale. It is the world's largest online marketplace, AI assistant provider, and cloud computing platform as measured by revenue and market capitalization. Amazon is the largest Internet company by revenue in the world. It is the second largest private employer in the United States and one of the world's most valuable companies."], ["price", 200.0], ["host_id", 3], ["created_at", "2021-04-14 07:24:26.435649"], ["updated_at", "2021-04-14 07:24:26.435649"]]
+  ↳ db/seeds.rb:58
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:68
+  [1m[36mSpot Create (0.5ms)[0m  [1m[32mINSERT INTO "spots" ("title", "address", "city", "lat", "lng", "description", "price", "host_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Google NYC: Stunning Office Room in Chelsea"], ["address", "111 8th Ave, New York, NY 10011"], ["city", "New York"], ["lat", 40.7128], ["lng", -74.006], ["description", "Google LLC is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, search engine, cloud computing, software, and hardware. It is considered one of the Big Four technology companies, alongside Amazon, Apple, and Facebook. In 2010, Google, which had previously leased space in the building contracted to purchase the entire 2,900,000-square-foot (270,000 m2) building, in a deal reported to be worth around $1.9 billion."], ["price", 400.0], ["host_id", 10], ["created_at", "2021-04-14 07:24:26.439135"], ["updated_at", "2021-04-14 07:24:26.439135"]]
+  ↳ db/seeds.rb:68
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:76
+  [1m[36mSpot Create (0.4ms)[0m  [1m[32mINSERT INTO "spots" ("title", "address", "city", "lat", "lng", "description", "price", "host_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Eiffel Tower: Midnight in Paris"], ["address", "Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France"], ["city", "Paris"], ["lat", 48.8584], ["lng", 2.2945], ["description", "The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower. Constructed from 1887 to 1889 as the entrance to the 1889 World's Fair, it was initially criticised by some of France's leading artists and intellectuals for its design, but it has become a global cultural icon of France and one of the most recognisable structures in the world. The Eiffel Tower is the most-visited paid monument in the world; 6.91 million people ascended it in 2015."], ["price", 500.0], ["host_id", 11], ["created_at", "2021-04-14 07:24:26.442207"], ["updated_at", "2021-04-14 07:24:26.442207"]]
+  ↳ db/seeds.rb:76
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:84
+  [1m[36mSpot Create (0.5ms)[0m  [1m[32mINSERT INTO "spots" ("title", "address", "city", "lat", "lng", "description", "price", "host_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Times Square: Crazy Night at the Center of NYC"], ["address", "Broadway, 7th Avenue, 42nd and 47th Streets"], ["city", "New York"], ["lat", 40.758], ["lng", -73.9855], ["description", "Times Square is a major commercial intersection, tourist destination, entertainment center, and neighborhood in the Midtown Manhattan section of New York City, at the junction of Broadway and Seventh Avenue. Brightly lit by numerous billboards and advertisements, it stretches from West 42nd to West 47th Streets, and is sometimes referred to as 'the Crossroads of the World', 'the Center of the Universe', 'the heart of the Great White Way', and 'the heart of the world'. One of the world's busiest pedestrian areas, it is also the hub of the Broadway Theater District and a major center of the world's entertainment industry. Times Square is one of the world's most visited tourist attractions, drawing an estimated 50 million visitors annually."], ["price", 200.0], ["host_id", 5], ["created_at", "2021-04-14 07:24:26.445087"], ["updated_at", "2021-04-14 07:24:26.445087"]]
+  ↳ db/seeds.rb:84
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:95
+  [1m[36mSpot Load (0.3ms)[0m  [1m[34mSELECT  "spots".* FROM "spots" WHERE "spots"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:95
+  [1m[36mReview Create (0.8ms)[0m  [1m[32mINSERT INTO "reviews" ("body", "rating", "spot_id", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["body", "The iconic Times Square. I have always wanted to go and I achieved my goal to come. There’s so many different                                   apps and restaurants to go to. So many interesting people. It is filled with life. Truly shows that New York is                                   the city that never sleeps."], ["rating", 4.5], ["spot_id", 6], ["author_id", 1], ["created_at", "2021-04-14 07:24:26.460601"], ["updated_at", "2021-04-14 07:24:26.460601"]]
+  ↳ db/seeds.rb:95
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:99
+  [1m[36mSpot Load (0.4ms)[0m  [1m[34mSELECT  "spots".* FROM "spots" WHERE "spots"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:99
+  [1m[36mReview Create (0.4ms)[0m  [1m[32mINSERT INTO "reviews" ("body", "rating", "spot_id", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["body", "This place confirms that this city never sleeps. Very colourful at night. And people seem to be in good vibes. Everyone looks happy. I really love this place and could stay here all day and night. A place to be if you’re visiting New York."], ["rating", 5.0], ["spot_id", 6], ["author_id", 11], ["created_at", "2021-04-14 07:24:26.464669"], ["updated_at", "2021-04-14 07:24:26.464669"]]
+  ↳ db/seeds.rb:99
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:106
+  [1m[36mSpot Load (0.3ms)[0m  [1m[34mSELECT  "spots".* FROM "spots" WHERE "spots"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:106
+  [1m[36mReview Create (0.4ms)[0m  [1m[32mINSERT INTO "reviews" ("body", "rating", "spot_id", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["body", "Love this magical place in NYC.  It's probably one of the most famous locations in New York City and should not be missed. The people watching here is top-notch with people from all over the world and the light show/massive advertising signs on all of the buildings that are on 24/7 are amazing.  The stores that border TS are terrific."], ["rating", 4.0], ["spot_id", 6], ["author_id", 3], ["created_at", "2021-04-14 07:24:26.468092"], ["updated_at", "2021-04-14 07:24:26.468092"]]
+  ↳ db/seeds.rb:106
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:112
+  [1m[36mSpot Load (0.3ms)[0m  [1m[34mSELECT  "spots".* FROM "spots" WHERE "spots"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:112
+  [1m[36mReview Create (0.5ms)[0m  [1m[32mINSERT INTO "reviews" ("body", "rating", "spot_id", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["body", "What an amazing museum. One of the best museums I ever been to. Make sure to bring comfy shoes because you’ll be doing plenty of walking inside this place. Also make sure to bring your student ID as it is based on an honor system. The prices will be half as cheap if you’re a student. Bring your camera also, you can take great shots here if you know where to look."], ["rating", 4.8], ["spot_id", 1], ["author_id", 11], ["created_at", "2021-04-14 07:24:26.471593"], ["updated_at", "2021-04-14 07:24:26.471593"]]
+  ↳ db/seeds.rb:112
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:117
+  [1m[36mSpot Load (0.3ms)[0m  [1m[34mSELECT  "spots".* FROM "spots" WHERE "spots"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:117
+  [1m[36mReview Create (0.6ms)[0m  [1m[32mINSERT INTO "reviews" ("body", "rating", "spot_id", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["body", "Great art!  You get to see paintings from some of the greatest in history which is super awesome! Tons to see multiple levels and various forms of art include installations, film and photography.  There is even outdoor area. There are many seating areas and ample staff and security.  The museum is huge with so much to explore. Definitely for the art lover and those interested to learn about art. I was skeptical to pay for entrance but it was WELL worth it, glad I did.  Your pass can also be used at their other location as well. Enjoy!!"], ["rating", 5.0], ["spot_id", 1], ["author_id", 1], ["created_at", "2021-04-14 07:24:26.475747"], ["updated_at", "2021-04-14 07:24:26.475747"]]
+  ↳ db/seeds.rb:117
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:123
+  [1m[36mSpot Load (0.3ms)[0m  [1m[34mSELECT  "spots".* FROM "spots" WHERE "spots"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:123
+  [1m[36mReview Create (0.4ms)[0m  [1m[32mINSERT INTO "reviews" ("body", "rating", "spot_id", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["body", "Gee where do you even begin?!? The MET is such a staple of the art world in NYC. There is so much art to appreciate and admire! It truly is a whole other world walking around this museum. You get a close look into the different time zones our ancestors once were in. I could stay here for weeks and just stare at all the work. An absolutely gorgeous museum that YOU HAVE TO VISIT!!"], ["rating", 5.0], ["spot_id", 1], ["author_id", 2], ["created_at", "2021-04-14 07:24:26.479400"], ["updated_at", "2021-04-14 07:24:26.479400"]]
+  ↳ db/seeds.rb:123
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:129
+  [1m[36mSpot Load (0.2ms)[0m  [1m[34mSELECT  "spots".* FROM "spots" WHERE "spots"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:129
+  [1m[36mReview Create (0.4ms)[0m  [1m[32mINSERT INTO "reviews" ("body", "rating", "spot_id", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["body", "Visited in March of year 2019. Good office in NYC historical building.  Picturesque views from terras."], ["rating", 4.0], ["spot_id", 4], ["author_id", 6], ["created_at", "2021-04-14 07:24:26.482739"], ["updated_at", "2021-04-14 07:24:26.482739"]]
+  ↳ db/seeds.rb:129
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:135
+  [1m[36mSpot Load (0.2ms)[0m  [1m[34mSELECT  "spots".* FROM "spots" WHERE "spots"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:135
+  [1m[36mReview Create (0.4ms)[0m  [1m[32mINSERT INTO "reviews" ("body", "rating", "spot_id", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["body", "Excellent view of the city and great perks. Several cafes in one building and lots of character. A big fan of the Lego microkitchen!"], ["rating", 4.8], ["spot_id", 4], ["author_id", 10], ["created_at", "2021-04-14 07:24:26.486088"], ["updated_at", "2021-04-14 07:24:26.486088"]]
+  ↳ db/seeds.rb:135
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:141
+  [1m[36mSpot Load (0.2ms)[0m  [1m[34mSELECT  "spots".* FROM "spots" WHERE "spots"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:141
+  [1m[36mReview Create (0.4ms)[0m  [1m[32mINSERT INTO "reviews" ("body", "rating", "spot_id", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["body", "Wonderful romantic place. Must visit with loved ones. Breathtaking view from up the level 2. People can also buy an additional Ticket and go up to the next level to even have a wonderful view or dine with love. Sure a wonder to visit and of course go on top of it. So many romantic couples were taking romantic photos in this structure. In the night there was a five minute light show which has to be viewed from a distance to enjoy how magnificently people made this city a tourist attraction because of this structure."], ["rating", 5.0], ["spot_id", 5], ["author_id", 1], ["created_at", "2021-04-14 07:24:26.489514"], ["updated_at", "2021-04-14 07:24:26.489514"]]
+  ↳ db/seeds.rb:141
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ db/seeds.rb:147
+  [1m[36mSpot Load (0.2ms)[0m  [1m[34mSELECT  "spots".* FROM "spots" WHERE "spots"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:147
+  [1m[36mReview Create (0.4ms)[0m  [1m[32mINSERT INTO "reviews" ("body", "rating", "spot_id", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["body", "Cool place to work. Loved the dipper and biosphere! The biosphere is really amazing, it is like a tropical forest with good humidity plants, trees and nice vibe. I could live there."], ["rating", 4.5], ["spot_id", 3], ["author_id", 18], ["created_at", "2021-04-14 07:24:26.493053"], ["updated_at", "2021-04-14 07:24:26.493053"]]
+  ↳ db/seeds.rb:147
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
