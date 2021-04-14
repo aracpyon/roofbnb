@@ -19,7 +19,7 @@ class SpotProfile extends React.Component{
   render(){
     if (this.props.spot){
       const { title, description, address, price, city, lat, lng } = this.props.spot;
-      const photos = this.props.spot.photoUrls;
+      const photos = this.props.spot.photos;
       const { reviews, authors, openModal } = this.props;
       let total_rating = 0;
       reviews.forEach(review => {
@@ -27,7 +27,6 @@ class SpotProfile extends React.Component{
       })
       const average = Number.parseFloat(total_rating / reviews.length).toFixed(2);
 
-      // debugger
       return (
         <div className="profile-content-container">
           <div className="profile-title-banner">

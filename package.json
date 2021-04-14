@@ -15,12 +15,14 @@
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
-    "webpack": "^5.32.0",
-    "webpack-cli": "^4.6.0"
+    "webpack": "^5.32.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --watch --mode=development",
     "postinstall": "webpack"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.6.0"
   }
 }

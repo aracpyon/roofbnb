@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 2021_04_14_051145) do
 
   create_table "spots", force: :cascade do |t|
     t.string "title", null: false
+    t.string "name", null: false
     t.string "address", null: false
     t.string "city", null: false
     t.float "lat", null: false

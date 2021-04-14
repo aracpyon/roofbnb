@@ -17,7 +17,7 @@ class Spot < ApplicationRecord
    primary_key: :id,
    foreign_key: :spot_id
 
-   has_many_attached :photos
+   # has_many_attached :photos
    
    # def self.find_by_city(city) #cityname, country name
    #  spots = Spot.find_by(city: city)

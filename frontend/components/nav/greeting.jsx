@@ -8,22 +8,7 @@ class Greeting extends React.Component {
     super(props);
     this.handleClick = this.handleClick.bind(this);
   }
-  //received "currentUser" and "logout" as props from its container
-  // debugger
-  //            if currentUser exists
-  // const sessionLinks = () => (
-  //   <nav className="nav_buttons">
-  //     <button className="nav-contents" onClick={() => openModal('signup')}>Sign up</button>
-  //     <button className="nav-contents" onClick={() => openModal('login')}>Log In</button>
-  //   </nav>
-  // )
-
-  // const greeting = () => (
-  //   <div className="greetings">
-  //     <p>Hello, {currentUser.name}</p>
-  //     <button onClick={logout}>Log out</button>
-  //   </div>
-  // )
+  
     handleClick(){
       this.props.logout().then(this.props.history.push('/'));
     }
@@ -48,21 +33,14 @@ class Greeting extends React.Component {
       </nav >
     )
 
-  // const session = currentUser ?
-  //   greeting(currentUser, logout) :
-  //   sessionLinks()
-
     const render = currentUser ?
     yesCurrentUser(logout) :
     noCurrentUser()
 
   return (
     <div className="nav-bar">
-      {/* <div className="main-page-image">
-
-      </div> */}
       <div className="nav-left">
-        <Link to="/"><img className="logo" src={window.logo2URL} /></Link>
+        <Link to="/" className="logo"><div className="logo">Roofbnb</div></Link>
         <SearchBarForm />
       </div>
       <div className="nav-right">

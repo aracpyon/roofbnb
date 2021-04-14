@@ -2,6 +2,7 @@ class CreateSpots < ActiveRecord::Migration[5.2]
   def change
     create_table :spots do |t|
       t.string :title, null: false
+      t.string :name, null: false
       t.string :address, null: false
       t.string :city, null: false
       t.float :lat, null: false

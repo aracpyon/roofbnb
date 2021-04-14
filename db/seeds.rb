@@ -38,6 +38,7 @@ ActiveRecord::Base.transaction do
  
    
    met = Spot.create(title: "The Metropolitan Museum of Art: Night with Masters' Paintings",
+                     name: "met",
                      host_id: ara.id,
                      address: "1000 5th Ave, New York, NY 10028", 
                      city: "New York",
@@ -45,18 +46,10 @@ ActiveRecord::Base.transaction do
                      lng: -73.9632, 
                      price: 200,
                      description: "The Metropolitan Museum of Art of New York City, colloquially 'the Met', is the largest art museum in the United States. With 6,953,927 visitors to its three locations in 2018, it was the third most visited art museum in the world. Its permanent collection contains over two million works, divided among 17 curatorial departments. The main building at 1000 Fifth Avenue, along the Museum Mile on the eastern edge of Central Park in Manhattan's Upper East Side, is by area one of the world's largest art galleries. A much smaller second location, The Cloisters at Fort Tryon Park in Upper Manhattan, contains an extensive collection of art, architecture, and artifacts from medieval Europe. On March 18, 2016, the museum opened the Met Breuer museum along Madison Avenue on the Upper East Side; it extends the museum's modern and contemporary art program.")
- 
-   anime = Spot.create(title: "NYC Anime: Best Place for Anime Lovers", 
-                       host_id: akeem.id, 
-                       address: "429 11th Ave, New York, NY 10001",
-                       city: "New York", 
-                       lat: 40.7578,
-                       lng: -74.0023,
-                       price: 300,
-                       description: "Anime NYC is an annual three-day anime convention held during November at the Jacob K. Javits Convention Center in New York City. The convention typically offers arcade games, an artist alley, concerts, manga library (Carolina Manga Library), masquerade, panels, screenings, vendors, and video and card games. Anime NYC offered 100 hours of programming in 2017. Anime NYC's organizer LeftField Media created the New York Comic Con and also runs Washington DC’s Awesome Con.")
    
    amazon = Spot.create(title: "Amazon: A Great Night with The World Biggest Commercial Website",
                         host_id: albert.id,
+                        name: "amazon",
                         address: "410 Terry Ave N, Seattle 98109, WA",
                         city: "Seattle",
                         lat: 47.608013,
@@ -67,6 +60,7 @@ ActiveRecord::Base.transaction do
                         )
    google_ny = Spot.create(title: "Google NYC: Stunning Office Room in Chelsea",
                            host_id: rich.id,
+                           name: "google",
                            address: "111 8th Ave, New York, NY 10011", 
                            city: "New York",
                            lat: 40.7128,
@@ -75,14 +69,17 @@ ActiveRecord::Base.transaction do
                            description: "Google LLC is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, search engine, cloud computing, software, and hardware. It is considered one of the Big Four technology companies, alongside Amazon, Apple, and Facebook. In 2010, Google, which had previously leased space in the building contracted to purchase the entire 2,900,000-square-foot (270,000 m2) building, in a deal reported to be worth around $1.9 billion.")
    eiffel = Spot.create(title: "Eiffel Tower: Midnight in Paris",
                          host_id: julian.id,
+                         name: "eiffel",
                          address: "Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France",
                          city: "Paris",
                          lat: 48.8584,
                          lng: 2.2945,
                          price: 500,
                          description: "The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower. Constructed from 1887 to 1889 as the entrance to the 1889 World's Fair, it was initially criticised by some of France's leading artists and intellectuals for its design, but it has become a global cultural icon of France and one of the most recognisable structures in the world. The Eiffel Tower is the most-visited paid monument in the world; 6.91 million people ascended it in 2015.")
+                         
    timessquare = Spot.create(title: "Times Square: Crazy Night at the Center of NYC",
                              host_id: jay.id,
+                             name: 'timesquare',
                              address: "Broadway, 7th Avenue, 42nd and 47th Streets",
                              city: "New York",
                              lat: 40.7580,
