@@ -18,8 +18,8 @@ class SpotProfile extends React.Component{
   
   render(){
     if (this.props.spot){
-      const { title, description, address, price, city, lat, lng } = this.props.spot;
-      const photos = this.props.spot.photos;
+      const { name, title, description, address, price, city, lat, lng } = this.props.spot;
+      const photos = this.props.photos[name];
       const { reviews, authors, openModal } = this.props;
       let total_rating = 0;
       reviews.forEach(review => {

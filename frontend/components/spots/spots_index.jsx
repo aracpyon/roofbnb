@@ -11,8 +11,8 @@ class SpotsIndex extends React.Component {
   }
 
   render(){
-    // debugger
-    const { spots } = this.props;
+    
+    const { spots, photos } = this.props;
     return(
       <main className="site-content">
         <div className="content-container">
@@ -39,6 +39,7 @@ class SpotsIndex extends React.Component {
                               <div key={spot.id} className="section1-indexes">
                                 <SpotIndexItem
                                   spot={spot}
+                                  photos={photos}
                                   key={spot.id} />
                               </div>
                            ))}

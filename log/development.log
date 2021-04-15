@@ -2371,3 +2371,698 @@ Processing by Api::SpotsController#index as JSON
 Completed 200 OK in 722ms (Views: 355.5ms | ActiveRecord: 319.1ms)
 
 
+Started GET "/" for ::1 at 2021-04-15 09:49:09 -0400
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/aracho/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 6968ms (Views: 6917.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/spots" for ::1 at 2021-04-15 09:49:17 -0400
+Processing by Api::SpotsController#index as JSON
+  Rendering api/spots/index.json.jbuilder
+  [1m[36mSpot Load (31.5ms)[0m  [1m[34mSELECT "spots".* FROM "spots"[0m
+  ↳ app/views/api/spots/index.json.jbuilder:1
+  Rendered api/spots/_spot.json.jbuilder (0.6ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.1ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/index.json.jbuilder (245.4ms)
+Completed 200 OK in 315ms (Views: 222.3ms | ActiveRecord: 44.8ms)
+
+
+Started GET "/" for ::1 at 2021-04-15 09:50:20 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 614ms (Views: 606.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/spots" for ::1 at 2021-04-15 09:50:22 -0400
+Processing by Api::SpotsController#index as JSON
+  Rendering api/spots/index.json.jbuilder
+  [1m[36mSpot Load (14.8ms)[0m  [1m[34mSELECT "spots".* FROM "spots"[0m
+  ↳ app/views/api/spots/index.json.jbuilder:1
+  Rendered api/spots/_spot.json.jbuilder (0.6ms)
+  Rendered api/spots/_spot.json.jbuilder (0.3ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/index.json.jbuilder (43.3ms)
+Completed 200 OK in 64ms (Views: 48.9ms | ActiveRecord: 14.8ms)
+
+
+Started GET "/" for ::1 at 2021-04-15 09:51:50 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 1317ms (Views: 1308.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-04-15 09:52:17 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 498ms (Views: 489.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-04-15 09:52:38 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 2638ms (Views: 2631.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/spots" for ::1 at 2021-04-15 09:52:43 -0400
+Processing by Api::SpotsController#index as JSON
+  Rendering api/spots/index.json.jbuilder
+  [1m[36mSpot Load (24.5ms)[0m  [1m[34mSELECT "spots".* FROM "spots"[0m
+  ↳ app/views/api/spots/index.json.jbuilder:1
+  Rendered api/spots/_spot.json.jbuilder (0.6ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.3ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.1ms)
+  Rendered api/spots/index.json.jbuilder (42.8ms)
+Completed 200 OK in 61ms (Views: 36.4ms | ActiveRecord: 24.5ms)
+
+
+Started GET "/" for ::1 at 2021-04-15 09:53:18 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 618ms (Views: 609.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/spots" for ::1 at 2021-04-15 09:53:21 -0400
+Processing by Api::SpotsController#index as JSON
+  Rendering api/spots/index.json.jbuilder
+  [1m[36mSpot Load (1.8ms)[0m  [1m[34mSELECT "spots".* FROM "spots"[0m
+  ↳ app/views/api/spots/index.json.jbuilder:1
+  Rendered api/spots/_spot.json.jbuilder (1.1ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.9ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/index.json.jbuilder (148.1ms)
+Completed 200 OK in 178ms (Views: 176.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2021-04-15 09:53:49 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 2345ms (Views: 2329.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/spots" for ::1 at 2021-04-15 09:53:54 -0400
+Processing by Api::SpotsController#index as JSON
+  Rendering api/spots/index.json.jbuilder
+  [1m[36mSpot Load (59.9ms)[0m  [1m[34mSELECT "spots".* FROM "spots"[0m
+  ↳ app/views/api/spots/index.json.jbuilder:1
+  Rendered api/spots/_spot.json.jbuilder (0.7ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.1ms)
+  Rendered api/spots/_spot.json.jbuilder (0.3ms)
+  Rendered api/spots/index.json.jbuilder (106.5ms)
+Completed 200 OK in 129ms (Views: 69.1ms | ActiveRecord: 59.9ms)
+
+
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Load (17.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Destroy (20.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 20]]
+  ↳ db/seeds.rb:10
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 21]]
+  ↳ db/seeds.rb:10
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 22]]
+  ↳ db/seeds.rb:10
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 23]]
+  ↳ db/seeds.rb:10
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 24]]
+  ↳ db/seeds.rb:10
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 25]]
+  ↳ db/seeds.rb:10
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 26]]
+  ↳ db/seeds.rb:10
+  [1m[36mUser Destroy (1.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 27]]
+  ↳ db/seeds.rb:10
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 28]]
+  ↳ db/seeds.rb:10
+  [1m[36mUser Destroy (0.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 29]]
+  ↳ db/seeds.rb:10
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 30]]
+  ↳ db/seeds.rb:10
+  [1m[36mUser Destroy (7.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 31]]
+  ↳ db/seeds.rb:10
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 32]]
+  ↳ db/seeds.rb:10
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 33]]
+  ↳ db/seeds.rb:10
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 34]]
+  ↳ db/seeds.rb:10
+  [1m[36mUser Destroy (1.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 35]]
+  ↳ db/seeds.rb:10
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 36]]
+  ↳ db/seeds.rb:10
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 37]]
+  ↳ db/seeds.rb:10
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 38]]
+  ↳ db/seeds.rb:10
+  [1m[36mSpot Load (8.8ms)[0m  [1m[34mSELECT "spots".* FROM "spots"[0m
+  ↳ db/seeds.rb:11
+  [1m[36mSpot Destroy (6.6ms)[0m  [1m[31mDELETE FROM "spots" WHERE "spots"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:11
+  [1m[36mSpot Destroy (6.2ms)[0m  [1m[31mDELETE FROM "spots" WHERE "spots"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:11
+  [1m[36mSpot Destroy (0.7ms)[0m  [1m[31mDELETE FROM "spots" WHERE "spots"."id" = $1[0m  [["id", 4]]
+  ↳ db/seeds.rb:11
+  [1m[36mSpot Destroy (8.6ms)[0m  [1m[31mDELETE FROM "spots" WHERE "spots"."id" = $1[0m  [["id", 5]]
+  ↳ db/seeds.rb:11
+  [1m[36mSpot Destroy (38.1ms)[0m  [1m[31mDELETE FROM "spots" WHERE "spots"."id" = $1[0m  [["id", 6]]
+  ↳ db/seeds.rb:11
+  [1m[36mBooking Load (71.0ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ db/seeds.rb:12
+  [1m[36mReview Load (25.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ db/seeds.rb:13
+  [1m[36mReview Destroy (2.9ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mReview Destroy (0.6ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:13
+  [1m[36mReview Destroy (0.5ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:13
+  [1m[36mReview Destroy (1.0ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 4]]
+  ↳ db/seeds.rb:13
+  [1m[36mReview Destroy (10.7ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 5]]
+  ↳ db/seeds.rb:13
+  [1m[36mReview Destroy (0.5ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 6]]
+  ↳ db/seeds.rb:13
+  [1m[36mReview Destroy (0.6ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 7]]
+  ↳ db/seeds.rb:13
+  [1m[36mReview Destroy (0.5ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 8]]
+  ↳ db/seeds.rb:13
+  [1m[36mReview Destroy (0.5ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 9]]
+  ↳ db/seeds.rb:13
+  [1m[36mReview Destroy (3.3ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 10]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "aracpyon@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Ara C Pyon"], ["email", "aracpyon@gmail.com"], ["password_digest", "$2a$12$luJJIppOJ8U6SPiXStG43O.lnqcaictHwqAJ376oqWk2yZpRlt6wW"], ["session_token", "s5VFDAY2PCuiWsNH_JrBvg"], ["created_at", "2021-04-15 13:56:40.116275"], ["updated_at", "2021-04-15 13:56:40.116275"]]
+  ↳ db/seeds.rb:18
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "akeem@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Akeem Nicholas"], ["email", "akeem@aa.com"], ["password_digest", "$2a$12$c13vVGHO7ee4DSbR8JCzh.VnHfCBYlRli0qYzWFbZEbWtBylCMnKe"], ["session_token", "ppeaUg8FWe47Z9YVLoLSmw"], ["created_at", "2021-04-15 13:56:40.455083"], ["updated_at", "2021-04-15 13:56:40.455083"]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (5.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "albert@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:20
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Albert Lee"], ["email", "albert@aa.com"], ["password_digest", "$2a$12$hXKcazWSWqYr9a2O/fiXXe3gEt2aWaylhwfjYY6rUCldOdHgJ2mXi"], ["session_token", "1tNG61AbhY7jEjJHpxDHbw"], ["created_at", "2021-04-15 13:56:40.800526"], ["updated_at", "2021-04-15 13:56:40.800526"]]
+  ↳ db/seeds.rb:20
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "phong@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Phong Ngo"], ["email", "phong@aa.com"], ["password_digest", "$2a$12$XuYZSeYzaT1/ncAbFA.MI.P5VVH4qE7mW/IbkhPLqqOAm4OE0Gmo6"], ["session_token", "WsmL9GzI2w5yKcuQ1qlZWQ"], ["created_at", "2021-04-15 13:56:41.153804"], ["updated_at", "2021-04-15 13:56:41.153804"]]
+  ↳ db/seeds.rb:21
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jay@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Jay Higgs"], ["email", "jay@aa.com"], ["password_digest", "$2a$12$wEXJc9GEVrVSwga15Vw/j.E2oOuRuoSXSvPCQwbOooKAZOvgEiznu"], ["session_token", "jYqwGTw7TsIqB-W58QWiKg"], ["created_at", "2021-04-15 13:56:41.506092"], ["updated_at", "2021-04-15 13:56:41.506092"]]
+  ↳ db/seeds.rb:22
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lorry@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Lawrence Nicastro"], ["email", "lorry@aa.com"], ["password_digest", "$2a$12$mKoM/IqMSVLMdTvwcWz.c.RyjTVcjJj4fyfgWMZxenlz0MZ9CYhAu"], ["session_token", "HUz1Qe7pZkDa3eIEJQ0_NQ"], ["created_at", "2021-04-15 13:56:41.824391"], ["updated_at", "2021-04-15 13:56:41.824391"]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "paul@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Paul Tan"], ["email", "paul@aa.com"], ["password_digest", "$2a$12$OfRfvnNvwvlDB7zEUkdvy.BWPekQmbAEFnGYSX1KJiOMeQ8w8KRDG"], ["session_token", "iCDOApUyJ3iUWuVvSQ-Wpw"], ["created_at", "2021-04-15 13:56:42.134355"], ["updated_at", "2021-04-15 13:56:42.134355"]]
+  ↳ db/seeds.rb:24
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "harry@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:25
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Harry Zec"], ["email", "harry@aa.com"], ["password_digest", "$2a$12$44MWPmWijRNVHBN2JJuuxOoNc7w0LO1ygsGG9h/IUtPBrYmxzIQHG"], ["session_token", "LMg4nWxjJW_R2TV2d74tJA"], ["created_at", "2021-04-15 13:56:42.457423"], ["updated_at", "2021-04-15 13:56:42.457423"]]
+  ↳ db/seeds.rb:25
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kai@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[36mUser Create (2.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Kai Ho"], ["email", "kai@aa.com"], ["password_digest", "$2a$12$7sbUFSpFAjFAP7kDZbVg1uJ.gOfeY5x/4p0o1VSQtU99D4xbBFHUq"], ["session_token", "v3_V0Eq0gzOKeoXO6XzzkQ"], ["created_at", "2021-04-15 13:56:42.828721"], ["updated_at", "2021-04-15 13:56:42.828721"]]
+  ↳ db/seeds.rb:26
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "rich@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Rich Lim"], ["email", "rich@aa.com"], ["password_digest", "$2a$12$VnUabk0tAHrmZKSTBUX5p.ZgkmYqdqZ2iynTNhOev0AGD3eYM0It."], ["session_token", "v8aPc_7WDt05JGeHu96hZQ"], ["created_at", "2021-04-15 13:56:43.163870"], ["updated_at", "2021-04-15 13:56:43.163870"]]
+  ↳ db/seeds.rb:27
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "julian@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:28
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Julian Knoche"], ["email", "julian@aa.com"], ["password_digest", "$2a$12$6krGCNNjUjprxQe32GbgSuza3gtuVdCdga5NQR8S.nRmLm6cQ/61u"], ["session_token", "fXYqKBIUbyyRSU4DVvQdfA"], ["created_at", "2021-04-15 13:56:43.475862"], ["updated_at", "2021-04-15 13:56:43.475862"]]
+  ↳ db/seeds.rb:28
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jesse@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mUser Create (15.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Jesse Colligan"], ["email", "jesse@aa.com"], ["password_digest", "$2a$12$7tMJ7cL6i3DBGjqKsg7sreoQ2s3/.Io3kqxuMC9NdfEnWdDVKKN5O"], ["session_token", "dkNl3ouROfrWjUo-kfh91g"], ["created_at", "2021-04-15 13:56:43.792909"], ["updated_at", "2021-04-15 13:56:43.792909"]]
+  ↳ db/seeds.rb:29
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jason@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:30
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Jason Wang"], ["email", "jason@aa.com"], ["password_digest", "$2a$12$kDkgIMUYJC1ysjnN8cFQ.OK5Z8qab4aLuwJMq9lH/poI9cmnHpRuG"], ["session_token", "xFHtZZU8a3US8EWRX9uF1g"], ["created_at", "2021-04-15 13:56:44.124747"], ["updated_at", "2021-04-15 13:56:44.124747"]]
+  ↳ db/seeds.rb:30
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "raz@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Raz Efron"], ["email", "raz@aa.com"], ["password_digest", "$2a$12$WoZ1kZqS/sYFn8irdcYP8uN7e1gBsLSHO.dBqOlgoeVgyeYEQi8wK"], ["session_token", "K2W7H37otlXwA9kb8_hmWA"], ["created_at", "2021-04-15 13:56:44.432598"], ["updated_at", "2021-04-15 13:56:44.432598"]]
+  ↳ db/seeds.rb:31
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "rob@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Rob Romano"], ["email", "rob@aa.com"], ["password_digest", "$2a$12$zDFMMKtZrsdVUFlvPDMy3ep7EFfoD2DggoL.7X5i3qM3QB7E.uRcO"], ["session_token", "XkuRKF3kfmmmexPYTSE5ZA"], ["created_at", "2021-04-15 13:56:44.765043"], ["updated_at", "2021-04-15 13:56:44.765043"]]
+  ↳ db/seeds.rb:32
+  [1m[36mUser Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "antonio@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:33
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Antonio Cuccu"], ["email", "antonio@aa.com"], ["password_digest", "$2a$12$bTQI6k2RLHkMGa8TfIenieTpgG07t2RYm4ZE5mVdT2frKu4XT4Sw6"], ["session_token", "W3Kkur83xuf44al42t2Xgg"], ["created_at", "2021-04-15 13:56:45.113457"], ["updated_at", "2021-04-15 13:56:45.113457"]]
+  ↳ db/seeds.rb:33
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "chris@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Chris Garthright"], ["email", "chris@aa.com"], ["password_digest", "$2a$12$spi2n7sHbgs5ybpZShDfo.F1MnRyftCJ3BC77RK.YJTDbU6XSWk7S"], ["session_token", "4ZMr0Dc6vwZ-FTvs_ZLDsA"], ["created_at", "2021-04-15 13:56:45.438949"], ["updated_at", "2021-04-15 13:56:45.438949"]]
+  ↳ db/seeds.rb:34
+  [1m[36mUser Exists (3.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "danny@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:35
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Danny Yoo"], ["email", "danny@aa.com"], ["password_digest", "$2a$12$qlo/4UcZON1k/pkfg3N0Q.yhTrtPLfD5wTf.ooNkYFp2eVeakmUdO"], ["session_token", "63GdZm5NRkfs81nJ-yn3Vg"], ["created_at", "2021-04-15 13:56:45.970950"], ["updated_at", "2021-04-15 13:56:45.970950"]]
+  ↳ db/seeds.rb:35
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "calvin@aa.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Calvin Curnuck"], ["email", "calvin@aa.com"], ["password_digest", "$2a$12$zzG/9j9f6EESggEBZeLUNO.M93D8FjJDPrZjNrX/J1ta52UQXIOCi"], ["session_token", "LetQJJwDE8gYiXXYsQOr4w"], ["created_at", "2021-04-15 13:56:46.378846"], ["updated_at", "2021-04-15 13:56:46.378846"]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[36mSpot Create (0.7ms)[0m  [1m[32mINSERT INTO "spots" ("title", "name", "address", "city", "lat", "lng", "description", "price", "host_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "The Metropolitan Museum of Art: Night with Masters' Paintings"], ["name", "met"], ["address", "1000 5th Ave, New York, NY 10028"], ["city", "New York"], ["lat", 40.7794], ["lng", -73.9632], ["description", "The Metropolitan Museum of Art of New York City, colloquially 'the Met', is the largest art museum in the United States. With 6,953,927 visitors to its three locations in 2018, it was the third most visited art museum in the world. Its permanent collection contains over two million works, divided among 17 curatorial departments. The main building at 1000 Fifth Avenue, along the Museum Mile on the eastern edge of Central Park in Manhattan's Upper East Side, is by area one of the world's largest art galleries. A much smaller second location, The Cloisters at Fort Tryon Park in Upper Manhattan, contains an extensive collection of art, architecture, and artifacts from medieval Europe. On March 18, 2016, the museum opened the Met Breuer museum along Madison Avenue on the Upper East Side; it extends the museum's modern and contemporary art program."], ["price", 200.0], ["host_id", 39], ["created_at", "2021-04-15 13:56:46.407434"], ["updated_at", "2021-04-15 13:56:46.407434"]]
+  ↳ db/seeds.rb:40
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ db/seeds.rb:50
+  [1m[36mSpot Create (1.2ms)[0m  [1m[32mINSERT INTO "spots" ("title", "name", "address", "city", "lat", "lng", "description", "price", "host_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Amazon: A Great Night with The World Biggest Commercial Website"], ["name", "amazon"], ["address", "410 Terry Ave N, Seattle 98109, WA"], ["city", "Seattle"], ["lat", 47.608013], ["lng", -122.335167], ["description", "Amazon.com, Inc., is an American multinational technology company based in Seattle that focuses on e-commerce, cloud computing, digital streaming, and artificial intelligence. It is considered one of the Big Four tech companies, along with Google, Apple, and Facebook. \n                        Amazon is known for its disruption of well-established industries through technological innovation and mass scale. It is the world's largest online marketplace, AI assistant provider, and cloud computing platform as measured by revenue and market capitalization. Amazon is the largest Internet company by revenue in the world. It is the second largest private employer in the United States and one of the world's most valuable companies."], ["price", 200.0], ["host_id", 41], ["created_at", "2021-04-15 13:56:46.412460"], ["updated_at", "2021-04-15 13:56:46.412460"]]
+  ↳ db/seeds.rb:50
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ db/seeds.rb:61
+  [1m[36mSpot Create (3.9ms)[0m  [1m[32mINSERT INTO "spots" ("title", "name", "address", "city", "lat", "lng", "description", "price", "host_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Google NYC: Stunning Office Room in Chelsea"], ["name", "google"], ["address", "111 8th Ave, New York, NY 10011"], ["city", "New York"], ["lat", 40.7128], ["lng", -74.006], ["description", "Google LLC is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, search engine, cloud computing, software, and hardware. It is considered one of the Big Four technology companies, alongside Amazon, Apple, and Facebook. In 2010, Google, which had previously leased space in the building contracted to purchase the entire 2,900,000-square-foot (270,000 m2) building, in a deal reported to be worth around $1.9 billion."], ["price", 400.0], ["host_id", 48], ["created_at", "2021-04-15 13:56:46.419214"], ["updated_at", "2021-04-15 13:56:46.419214"]]
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ db/seeds.rb:70
+  [1m[36mSpot Create (2.2ms)[0m  [1m[32mINSERT INTO "spots" ("title", "name", "address", "city", "lat", "lng", "description", "price", "host_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Eiffel Tower: Midnight in Paris"], ["name", "eiffel"], ["address", "Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France"], ["city", "Paris"], ["lat", 48.8584], ["lng", 2.2945], ["description", "The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower. Constructed from 1887 to 1889 as the entrance to the 1889 World's Fair, it was initially criticised by some of France's leading artists and intellectuals for its design, but it has become a global cultural icon of France and one of the most recognisable structures in the world. The Eiffel Tower is the most-visited paid monument in the world; 6.91 million people ascended it in 2015."], ["price", 500.0], ["host_id", 49], ["created_at", "2021-04-15 13:56:46.426640"], ["updated_at", "2021-04-15 13:56:46.426640"]]
+  ↳ db/seeds.rb:70
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ db/seeds.rb:80
+  [1m[36mSpot Create (13.6ms)[0m  [1m[32mINSERT INTO "spots" ("title", "name", "address", "city", "lat", "lng", "description", "price", "host_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Times Square: Crazy Night at the Center of NYC"], ["name", "timesquare"], ["address", "Broadway, 7th Avenue, 42nd and 47th Streets"], ["city", "New York"], ["lat", 40.758], ["lng", -73.9855], ["description", "Times Square is a major commercial intersection, tourist destination, entertainment center, and neighborhood in the Midtown Manhattan section of New York City, at the junction of Broadway and Seventh Avenue. Brightly lit by numerous billboards and advertisements, it stretches from West 42nd to West 47th Streets, and is sometimes referred to as 'the Crossroads of the World', 'the Center of the Universe', 'the heart of the Great White Way', and 'the heart of the world'. One of the world's busiest pedestrian areas, it is also the hub of the Broadway Theater District and a major center of the world's entertainment industry. Times Square is one of the world's most visited tourist attractions, drawing an estimated 50 million visitors annually."], ["price", 200.0], ["host_id", 43], ["created_at", "2021-04-15 13:56:46.433077"], ["updated_at", "2021-04-15 13:56:46.433077"]]
+  ↳ db/seeds.rb:80
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ db/seeds.rb:92
+  [1m[36mSpot Load (0.3ms)[0m  [1m[34mSELECT  "spots".* FROM "spots" WHERE "spots"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:92
+  [1m[36mReview Create (9.3ms)[0m  [1m[32mINSERT INTO "reviews" ("body", "rating", "spot_id", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["body", "The iconic Times Square. I have always wanted to go and I achieved my goal to come. There’s so many different                                   apps and restaurants to go to. So many interesting people. It is filled with life. Truly shows that New York is                                   the city that never sleeps."], ["rating", 4.5], ["spot_id", 11], ["author_id", 39], ["created_at", "2021-04-15 13:56:46.464569"], ["updated_at", "2021-04-15 13:56:46.464569"]]
+  ↳ db/seeds.rb:92
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ db/seeds.rb:96
+  [1m[36mSpot Load (0.4ms)[0m  [1m[34mSELECT  "spots".* FROM "spots" WHERE "spots"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:96
+  [1m[36mReview Create (6.9ms)[0m  [1m[32mINSERT INTO "reviews" ("body", "rating", "spot_id", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["body", "This place confirms that this city never sleeps. Very colourful at night. And people seem to be in good vibes. Everyone looks happy. I really love this place and could stay here all day and night. A place to be if you’re visiting New York."], ["rating", 5.0], ["spot_id", 11], ["author_id", 49], ["created_at", "2021-04-15 13:56:46.478787"], ["updated_at", "2021-04-15 13:56:46.478787"]]
+  ↳ db/seeds.rb:96
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ db/seeds.rb:103
+  [1m[36mSpot Load (0.4ms)[0m  [1m[34mSELECT  "spots".* FROM "spots" WHERE "spots"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:103
+  [1m[36mReview Create (1.6ms)[0m  [1m[32mINSERT INTO "reviews" ("body", "rating", "spot_id", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["body", "Love this magical place in NYC.  It's probably one of the most famous locations in New York City and should not be missed. The people watching here is top-notch with people from all over the world and the light show/massive advertising signs on all of the buildings that are on 24/7 are amazing.  The stores that border TS are terrific."], ["rating", 4.0], ["spot_id", 11], ["author_id", 41], ["created_at", "2021-04-15 13:56:46.493554"], ["updated_at", "2021-04-15 13:56:46.493554"]]
+  ↳ db/seeds.rb:103
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ db/seeds.rb:109
+  [1m[36mSpot Load (8.4ms)[0m  [1m[34mSELECT  "spots".* FROM "spots" WHERE "spots"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:109
+  [1m[36mReview Create (2.4ms)[0m  [1m[32mINSERT INTO "reviews" ("body", "rating", "spot_id", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["body", "What an amazing museum. One of the best museums I ever been to. Make sure to bring comfy shoes because you’ll be doing plenty of walking inside this place. Also make sure to bring your student ID as it is based on an honor system. The prices will be half as cheap if you’re a student. Bring your camera also, you can take great shots here if you know where to look."], ["rating", 4.8], ["spot_id", 7], ["author_id", 49], ["created_at", "2021-04-15 13:56:46.509797"], ["updated_at", "2021-04-15 13:56:46.509797"]]
+  ↳ db/seeds.rb:109
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ db/seeds.rb:114
+  [1m[36mSpot Load (1.3ms)[0m  [1m[34mSELECT  "spots".* FROM "spots" WHERE "spots"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:114
+  [1m[36mReview Create (0.5ms)[0m  [1m[32mINSERT INTO "reviews" ("body", "rating", "spot_id", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["body", "Great art!  You get to see paintings from some of the greatest in history which is super awesome! Tons to see multiple levels and various forms of art include installations, film and photography.  There is even outdoor area. There are many seating areas and ample staff and security.  The museum is huge with so much to explore. Definitely for the art lover and those interested to learn about art. I was skeptical to pay for entrance but it was WELL worth it, glad I did.  Your pass can also be used at their other location as well. Enjoy!!"], ["rating", 5.0], ["spot_id", 7], ["author_id", 39], ["created_at", "2021-04-15 13:56:46.520306"], ["updated_at", "2021-04-15 13:56:46.520306"]]
+  ↳ db/seeds.rb:114
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ db/seeds.rb:120
+  [1m[36mSpot Load (0.3ms)[0m  [1m[34mSELECT  "spots".* FROM "spots" WHERE "spots"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:120
+  [1m[36mReview Create (0.4ms)[0m  [1m[32mINSERT INTO "reviews" ("body", "rating", "spot_id", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["body", "Gee where do you even begin?!? The MET is such a staple of the art world in NYC. There is so much art to appreciate and admire! It truly is a whole other world walking around this museum. You get a close look into the different time zones our ancestors once were in. I could stay here for weeks and just stare at all the work. An absolutely gorgeous museum that YOU HAVE TO VISIT!!"], ["rating", 5.0], ["spot_id", 7], ["author_id", 40], ["created_at", "2021-04-15 13:56:46.524509"], ["updated_at", "2021-04-15 13:56:46.524509"]]
+  ↳ db/seeds.rb:120
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ db/seeds.rb:126
+  [1m[36mSpot Load (0.9ms)[0m  [1m[34mSELECT  "spots".* FROM "spots" WHERE "spots"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:126
+  [1m[36mReview Create (0.7ms)[0m  [1m[32mINSERT INTO "reviews" ("body", "rating", "spot_id", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["body", "Visited in March of year 2019. Good office in NYC historical building.  Picturesque views from terras."], ["rating", 4.0], ["spot_id", 9], ["author_id", 44], ["created_at", "2021-04-15 13:56:46.529556"], ["updated_at", "2021-04-15 13:56:46.529556"]]
+  ↳ db/seeds.rb:126
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ db/seeds.rb:132
+  [1m[36mSpot Load (0.3ms)[0m  [1m[34mSELECT  "spots".* FROM "spots" WHERE "spots"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:132
+  [1m[36mReview Create (0.5ms)[0m  [1m[32mINSERT INTO "reviews" ("body", "rating", "spot_id", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["body", "Excellent view of the city and great perks. Several cafes in one building and lots of character. A big fan of the Lego microkitchen!"], ["rating", 4.8], ["spot_id", 9], ["author_id", 48], ["created_at", "2021-04-15 13:56:46.536487"], ["updated_at", "2021-04-15 13:56:46.536487"]]
+  ↳ db/seeds.rb:132
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ db/seeds.rb:138
+  [1m[36mSpot Load (0.3ms)[0m  [1m[34mSELECT  "spots".* FROM "spots" WHERE "spots"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:138
+  [1m[36mReview Create (0.7ms)[0m  [1m[32mINSERT INTO "reviews" ("body", "rating", "spot_id", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["body", "Wonderful romantic place. Must visit with loved ones. Breathtaking view from up the level 2. People can also buy an additional Ticket and go up to the next level to even have a wonderful view or dine with love. Sure a wonder to visit and of course go on top of it. So many romantic couples were taking romantic photos in this structure. In the night there was a five minute light show which has to be viewed from a distance to enjoy how magnificently people made this city a tourist attraction because of this structure."], ["rating", 5.0], ["spot_id", 10], ["author_id", 39], ["created_at", "2021-04-15 13:56:46.540996"], ["updated_at", "2021-04-15 13:56:46.540996"]]
+  ↳ db/seeds.rb:138
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ db/seeds.rb:144
+  [1m[36mSpot Load (0.6ms)[0m  [1m[34mSELECT  "spots".* FROM "spots" WHERE "spots"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:144
+  [1m[36mReview Create (1.7ms)[0m  [1m[32mINSERT INTO "reviews" ("body", "rating", "spot_id", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["body", "Cool place to work. Loved the dipper and biosphere! The biosphere is really amazing, it is like a tropical forest with good humidity plants, trees and nice vibe. I could live there."], ["rating", 4.5], ["spot_id", 8], ["author_id", 56], ["created_at", "2021-04-15 13:56:46.550816"], ["updated_at", "2021-04-15 13:56:46.550816"]]
+  ↳ db/seeds.rb:144
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+Started GET "/api/spots" for ::1 at 2021-04-15 09:57:15 -0400
+  [1m[35m (6.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/aracho/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by Api::SpotsController#index as JSON
+  Rendering api/spots/index.json.jbuilder
+  [1m[36mSpot Load (30.7ms)[0m  [1m[34mSELECT "spots".* FROM "spots"[0m
+  ↳ app/views/api/spots/index.json.jbuilder:1
+  Rendered api/spots/_spot.json.jbuilder (1.9ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.5ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/index.json.jbuilder (216.0ms)
+Completed 200 OK in 328ms (Views: 190.8ms | ActiveRecord: 71.3ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-04-15 09:57:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[36mSpot Load (0.9ms)[0m  [1m[34mSELECT  "spots".* FROM "spots" ORDER BY "spots"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for ::1 at 2021-04-15 10:00:01 -0400
+  [1m[35m (8.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/aracho/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 4645ms (Views: 4637.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/spots" for ::1 at 2021-04-15 10:00:07 -0400
+Processing by Api::SpotsController#index as JSON
+  Rendering api/spots/index.json.jbuilder
+  [1m[36mSpot Load (8.8ms)[0m  [1m[34mSELECT "spots".* FROM "spots"[0m
+  ↳ app/views/api/spots/index.json.jbuilder:1
+  Rendered api/spots/_spot.json.jbuilder (0.6ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/index.json.jbuilder (211.1ms)
+Completed 200 OK in 272ms (Views: 158.5ms | ActiveRecord: 84.7ms)
+
+
+Started GET "/api/spots/7" for ::1 at 2021-04-15 10:00:15 -0400
+Processing by Api::SpotsController#show as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mSpot Load (3.5ms)[0m  [1m[34mSELECT  "spots".* FROM "spots" WHERE "spots"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/api/spots_controller.rb:8
+  Rendering api/spots/show.json.jbuilder
+  Rendered api/spots/_spot.json.jbuilder (1.7ms)
+  [1m[36mReview Load (7.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."spot_id" = $1[0m  [["spot_id", 7]]
+  ↳ app/views/api/spots/show.json.jbuilder:14
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IN ($1, $2, $3)[0m  [["id", 49], ["id", 39], ["id", 40]]
+  ↳ app/views/api/spots/show.json.jbuilder:14
+  Rendered api/reviews/_review.json.jbuilder (0.7ms)
+  Rendered api/reviews/_review.json.jbuilder (0.1ms)
+  Rendered api/reviews/_review.json.jbuilder (0.2ms)
+  Rendered api/spots/show.json.jbuilder (399.8ms)
+Completed 200 OK in 483ms (Views: 284.3ms | ActiveRecord: 177.7ms)
+
+
+Started GET "/api/spots" for ::1 at 2021-04-15 10:00:24 -0400
+Processing by Api::SpotsController#index as JSON
+  Rendering api/spots/index.json.jbuilder
+  [1m[36mSpot Load (4.7ms)[0m  [1m[34mSELECT "spots".* FROM "spots"[0m
+  ↳ app/views/api/spots/index.json.jbuilder:1
+  Rendered api/spots/_spot.json.jbuilder (0.6ms)
+  Rendered api/spots/_spot.json.jbuilder (2.3ms)
+  Rendered api/spots/_spot.json.jbuilder (0.4ms)
+  Rendered api/spots/_spot.json.jbuilder (0.1ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/index.json.jbuilder (61.7ms)
+Completed 200 OK in 113ms (Views: 107.4ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/" for ::1 at 2021-04-15 10:00:33 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 633ms (Views: 628.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/spots" for ::1 at 2021-04-15 10:00:35 -0400
+Processing by Api::SpotsController#index as JSON
+  Rendering api/spots/index.json.jbuilder
+  [1m[36mSpot Load (7.5ms)[0m  [1m[34mSELECT "spots".* FROM "spots"[0m
+  ↳ app/views/api/spots/index.json.jbuilder:1
+  Rendered api/spots/_spot.json.jbuilder (1.8ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.3ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/index.json.jbuilder (86.2ms)
+Completed 200 OK in 113ms (Views: 104.7ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/" for ::1 at 2021-04-15 10:00:39 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 244ms (Views: 234.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/spots" for ::1 at 2021-04-15 10:00:40 -0400
+Processing by Api::SpotsController#index as JSON
+  Rendering api/spots/index.json.jbuilder
+  [1m[36mSpot Load (11.9ms)[0m  [1m[34mSELECT "spots".* FROM "spots"[0m
+  ↳ app/views/api/spots/index.json.jbuilder:1
+  Rendered api/spots/_spot.json.jbuilder (3.7ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/index.json.jbuilder (34.0ms)
+Completed 200 OK in 56ms (Views: 44.0ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/" for ::1 at 2021-04-15 10:00:44 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 174ms (Views: 163.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/spots" for ::1 at 2021-04-15 10:00:45 -0400
+Processing by Api::SpotsController#index as JSON
+  Rendering api/spots/index.json.jbuilder
+  [1m[36mSpot Load (14.7ms)[0m  [1m[34mSELECT "spots".* FROM "spots"[0m
+  ↳ app/views/api/spots/index.json.jbuilder:1
+  Rendered api/spots/_spot.json.jbuilder (0.9ms)
+  Rendered api/spots/_spot.json.jbuilder (0.4ms)
+  Rendered api/spots/_spot.json.jbuilder (0.4ms)
+  Rendered api/spots/_spot.json.jbuilder (0.3ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/index.json.jbuilder (43.1ms)
+Completed 200 OK in 69ms (Views: 53.8ms | ActiveRecord: 14.7ms)
+
+
+Started GET "/" for ::1 at 2021-04-15 10:00:52 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 493ms (Views: 484.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/spots" for ::1 at 2021-04-15 10:00:53 -0400
+Processing by Api::SpotsController#index as JSON
+  Rendering api/spots/index.json.jbuilder
+  [1m[36mSpot Load (181.4ms)[0m  [1m[34mSELECT "spots".* FROM "spots"[0m
+  ↳ app/views/api/spots/index.json.jbuilder:1
+  Rendered api/spots/_spot.json.jbuilder (0.5ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.3ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.3ms)
+  Rendered api/spots/index.json.jbuilder (236.2ms)
+Completed 200 OK in 265ms (Views: 82.8ms | ActiveRecord: 181.4ms)
+
+
+Started GET "/" for ::1 at 2021-04-15 10:01:13 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 796ms (Views: 787.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/spots" for ::1 at 2021-04-15 10:01:15 -0400
+Processing by Api::SpotsController#index as JSON
+  Rendering api/spots/index.json.jbuilder
+  [1m[36mSpot Load (4.3ms)[0m  [1m[34mSELECT "spots".* FROM "spots"[0m
+  ↳ app/views/api/spots/index.json.jbuilder:1
+  Rendered api/spots/_spot.json.jbuilder (0.5ms)
+  Rendered api/spots/_spot.json.jbuilder (0.1ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.1ms)
+  Rendered api/spots/_spot.json.jbuilder (0.3ms)
+  Rendered api/spots/index.json.jbuilder (24.7ms)
+Completed 200 OK in 47ms (Views: 41.8ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/" for ::1 at 2021-04-15 10:01:23 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 151ms (Views: 142.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/spots" for ::1 at 2021-04-15 10:01:24 -0400
+Processing by Api::SpotsController#index as JSON
+  Rendering api/spots/index.json.jbuilder
+  [1m[36mSpot Load (47.9ms)[0m  [1m[34mSELECT "spots".* FROM "spots"[0m
+  ↳ app/views/api/spots/index.json.jbuilder:1
+  Rendered api/spots/_spot.json.jbuilder (0.7ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/index.json.jbuilder (129.8ms)
+Completed 200 OK in 180ms (Views: 128.6ms | ActiveRecord: 47.9ms)
+
+
+Started GET "/" for ::1 at 2021-04-15 10:01:25 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 133ms (Views: 126.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/spots" for ::1 at 2021-04-15 10:01:25 -0400
+Processing by Api::SpotsController#index as JSON
+  Rendering api/spots/index.json.jbuilder
+  [1m[36mSpot Load (10.5ms)[0m  [1m[34mSELECT "spots".* FROM "spots"[0m
+  ↳ app/views/api/spots/index.json.jbuilder:1
+  Rendered api/spots/_spot.json.jbuilder (1.1ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.4ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/index.json.jbuilder (28.8ms)
+Completed 200 OK in 56ms (Views: 45.0ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/" for ::1 at 2021-04-15 10:01:26 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 139ms (Views: 129.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/spots" for ::1 at 2021-04-15 10:01:27 -0400
+Processing by Api::SpotsController#index as JSON
+  Rendering api/spots/index.json.jbuilder
+  [1m[36mSpot Load (25.0ms)[0m  [1m[34mSELECT "spots".* FROM "spots"[0m
+  ↳ app/views/api/spots/index.json.jbuilder:1
+  Rendered api/spots/_spot.json.jbuilder (0.7ms)
+  Rendered api/spots/_spot.json.jbuilder (0.4ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.4ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/index.json.jbuilder (53.6ms)
+Completed 200 OK in 74ms (Views: 48.4ms | ActiveRecord: 25.0ms)
+
+
+Started GET "/" for ::1 at 2021-04-15 10:01:48 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 364ms (Views: 358.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/spots" for ::1 at 2021-04-15 10:01:49 -0400
+Processing by Api::SpotsController#index as JSON
+  Rendering api/spots/index.json.jbuilder
+  [1m[36mSpot Load (3.1ms)[0m  [1m[34mSELECT "spots".* FROM "spots"[0m
+  ↳ app/views/api/spots/index.json.jbuilder:1
+  Rendered api/spots/_spot.json.jbuilder (0.5ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.1ms)
+  Rendered api/spots/_spot.json.jbuilder (0.1ms)
+  Rendered api/spots/_spot.json.jbuilder (1.6ms)
+  Rendered api/spots/index.json.jbuilder (35.5ms)
+Completed 200 OK in 58ms (Views: 53.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2021-04-15 10:02:07 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/aracho/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (29.4ms)
+Completed 200 OK in 3517ms (Views: 3498.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/spots" for ::1 at 2021-04-15 10:02:12 -0400
+Processing by Api::SpotsController#index as JSON
+  Rendering api/spots/index.json.jbuilder
+  [1m[36mSpot Load (19.2ms)[0m  [1m[34mSELECT "spots".* FROM "spots"[0m
+  ↳ app/views/api/spots/index.json.jbuilder:1
+  Rendered api/spots/_spot.json.jbuilder (1.1ms)
+  Rendered api/spots/_spot.json.jbuilder (0.3ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.3ms)
+  Rendered api/spots/_spot.json.jbuilder (45.8ms)
+  Rendered api/spots/index.json.jbuilder (269.7ms)
+Completed 200 OK in 361ms (Views: 242.2ms | ActiveRecord: 64.6ms)
+
+
+Started GET "/" for ::1 at 2021-04-15 10:04:15 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 324ms (Views: 304.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/spots" for ::1 at 2021-04-15 10:04:17 -0400
+Processing by Api::SpotsController#index as JSON
+  Rendering api/spots/index.json.jbuilder
+  [1m[36mSpot Load (9.3ms)[0m  [1m[34mSELECT "spots".* FROM "spots"[0m
+  ↳ app/views/api/spots/index.json.jbuilder:1
+  Rendered api/spots/_spot.json.jbuilder (1.6ms)
+  Rendered api/spots/_spot.json.jbuilder (0.4ms)
+  Rendered api/spots/_spot.json.jbuilder (0.4ms)
+  Rendered api/spots/_spot.json.jbuilder (0.4ms)
+  Rendered api/spots/_spot.json.jbuilder (0.3ms)
+  Rendered api/spots/index.json.jbuilder (39.9ms)
+Completed 200 OK in 70ms (Views: 60.3ms | ActiveRecord: 9.3ms)
+
+

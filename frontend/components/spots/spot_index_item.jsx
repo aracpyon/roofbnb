@@ -11,22 +11,19 @@ class SpotIndexItem extends React.Component {
   handleClick(){
     const spotId = this.props.spot.id
     this.props.history.push(`/spots/${spotId}`);
-      // < Redirect to = {`/spots/${this.props.spot.id}`}/>
-  
-    //goes to spot_profile
   }
 
   render(){
-    // debugger
-    const { title, city, price, description } = this.props.spot;
-    const photos = this.props.spot.photos;
+ 
+    const { name, title, city, price } = this.props.spot;
+    const photos = this.props.photos;
     const first = 1;
-
+    debugger
     return (
   
         <div className="section1-index-item" onClick={this.handleClick}>
           <div className="section1-photo-container">
-              <img className="section1-photo" src={photos[0]} />
+              <img className="section1-photo" src={photos[name][0]} />
           </div>
             
           <div className="spot-index-info">

@@ -1,1 +1,1 @@
-json.extract! spot, :id, :host_id, :title, :city, :address, :lat, :lng, :price, :description
+json.extract! spot, :id, :host_id, :name, :title, :city, :address, :lat, :lng, :price, :description
