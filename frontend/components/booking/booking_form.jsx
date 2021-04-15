@@ -1,29 +1,27 @@
 import React from 'react';
 import { DateRangePicker, SingleDatePicker, DayPickerRangeController } from 'react-dates';
-// import { START_DATE, END_DATE } from 'react-dates/src/constants';
-// import isInclusivelyAfterDay from 'react-dates/src/utils/isInclusivelyAfterDay';
-// import 'react-dates/initialize';
-// import 'react-dates/lib/css/_datepicker.css';
-// import './date-picker.css';
+import { START_DATE, END_DATE } from 'react-dates/src/constants';
+import isInclusivelyAfterDay from 'react-dates/src/utils/isInclusivelyAfterDay';
+import 'react-dates/initialize';
+import 'react-dates/lib/css/_datepicker.css';
+import './date-picker.css';
 
 
 class BookingForm extends React.Component{
   constructor(props){
     super(props);
     this.state = this.props.booking;
-    // debugger
+    
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleFocus = this.handleFocus.bind(this);
     this.handleBlur = this.handleBlur.bind(this);
     this.increment = this.increment.bind(this);
-    // this.decrement = this.decrement.bind(this);
+    
 
     this.innerRef = React.createRef();
     this.outerRef = React.createRef();
   }
-  // componentDidMount(){
-  //   this.props.fetchSpot(this.props.spot.id);
-  // }
+  
 
   handleDate(date){
     if (date) {
@@ -43,21 +41,11 @@ class BookingForm extends React.Component{
     splited.unshift(splited.pop());
     return splited.join("");
   }
-  // handleInput(type){
-  //   return e => {
-  //     if (this.state[type] === null) {
-  //       // debugger
-  //     return this.setState({[type]: this.dateTransform(e.target.value)})
-  //   }else{
-  //     // debugger
-  //     return this.state;
-  //     }
-  //   }
-  // }
+  
 
   
   handleSubmit(e){
-    // debugger
+   
     e.preventDefault();
     const { startDate, endDate, num_guests, guest_id, spot_id } = this.state;
     const newBooking = Object.assign(
@@ -69,61 +57,37 @@ class BookingForm extends React.Component{
                           guest_id: guest_id
                         }
                         );
-    // debugger
+   
     this.props.action(newBooking);
     this.props.closeModal();
   }
   
   handleFocus(e){
-    // debugger
+    
     if (this.innerRef.current !== e.target && !this.innerRef.current.contains(e.target)){
       if (this.state.open){ 
-      // debugger
+    
       return this.setState({open: false})
       
     }else{
-      // debugger
+   
       return this.setState({open: true })
       }
     }
-    
-    // document.addEventListener("click", function (e) {
-    //   var element = document.getElementById('parent');
-
-    //   if (e.target !== element && !element.contains(e.target)) {
-    //     this.setState({ open: false });
-    //   }
-    // });
-    // this.setState({ open: true });
 
   }
 
-  // handleBlur(){
-  //   // debugger;
-    
-  //   // return e => {
-  //   //   debugger
-  //   //   const element = document.getElementById('parent');
-
-  //   // if (!element.contains(e.target)) {
-  //   //   return this.setState({ open: false })
-  //   // }
-  //   // // this.setState({ open: false });
-  //   // }
-    
-  // }
+  
 
   handleBlur(ref, callback){
-    // debugger 
     return event => {
-      // debugger
       const { relatedTarget } = event;
       const node = ref.current;
 
       if (node){
-        // debugger
+       
         if (node !== relatedTarget && !node.contains(relatedTarget)){
-        // debugger
+       
         callback();
         }
       }else{
@@ -135,7 +99,7 @@ class BookingForm extends React.Component{
   }
 
   increment(type){
-    // debugger
+    
     const val1 = this.state[type]
     if ( this.state[type] < 10 ){
       return this.setState({
@@ -182,9 +146,9 @@ class BookingForm extends React.Component{
   render(){
 
     if (this.props.spot){
-    const {  title, price } = this.props.spot;
+    const {  title, price, photos } = this.props.spot;
     const { num_guests, adults, children, infants, open } = this.state;
-    debugger
+    
     let dropdownFlag = open ? dropdownFlag = 'OPEN' : dropdownFlag = ''
     // const photo = photoUrls.length > 1 ? photoUrls[1] : photoUrls[0]
     
@@ -204,17 +168,13 @@ class BookingForm extends React.Component{
                   startDate={this.state.startDate}
                   endDate={this.state.endDate}
                   onDatesChange={({startDate, endDate}) => {
-                    // debugger
                     return this.setState({startDate, endDate})}}
                   focusedInput={this.state.focusedInput}
                   onFocusChange={focusedInput => {
-                    // debugger
+                  
                     return this.setState({ focusedInput })}}
                   numberOfMonths={2}
                   hideKeyboardShortcutsPanel={true}
-                  // showClearDates={true}
-                  // isOutsideRange={day => !isInclusivelyAfterDay(day, moment())}
-                  // isDayBlocked={day => this.dayBlocked(day)}
                 
                 />
                 
@@ -225,7 +185,7 @@ class BookingForm extends React.Component{
 
               <div className="head">
                 <div className="thumb-title">
-                  <img className="thumbnail" src={photo} alt="" />
+                  <img className="thumbnail" src={photos[0]} alt="" />
                   <h2 className="spot-title">{title}</h2>
                 </div>
                 <div className="comment" >Add your travel dates for exact pricing</div>

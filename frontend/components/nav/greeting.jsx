@@ -40,7 +40,7 @@ class Greeting extends React.Component {
   return (
     <div className="nav-bar">
       <div className="nav-left">
-        <Link to="/" className="logo"><div className="logo">Roofbnb</div></Link>
+        <Link to="/"><img className="logo" src={window.logo} /></Link>
         <SearchBarForm />
       </div>
       <div className="nav-right">

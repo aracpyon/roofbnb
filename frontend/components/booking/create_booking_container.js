@@ -7,7 +7,6 @@ import { START_DATE, END_DATE } from 'react-dates/src/constants';
 // import { withRouter } from 'react-router-dom';
 
 const mSTP = (state, ownProps) => {
-  debugger
   return {
     spot: state.entities.spots[ownProps.spotId],
     booking: {
@@ -22,7 +21,6 @@ const mSTP = (state, ownProps) => {
       focusedInput: START_DATE,
       open: false,
       error: ""
-      // showClearDates: false
     },
     formType: 'createBooking'
   }
