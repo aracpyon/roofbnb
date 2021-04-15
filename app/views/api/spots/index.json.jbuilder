@@ -1,4 +1,3 @@
-
 @spots.each do |spot|
   json.set! spot.id do
     photos = {

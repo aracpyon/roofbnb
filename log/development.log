@@ -2348,3 +2348,26 @@ Processing by Api::SpotsController#index as JSON
 Completed 200 OK in 286ms (Views: 279.0ms | ActiveRecord: 7.0ms)
 
 
+Started GET "/" for ::1 at 2021-04-15 09:30:44 -0400
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/aracho/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 2966ms (Views: 2958.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/spots" for ::1 at 2021-04-15 09:30:48 -0400
+Processing by Api::SpotsController#index as JSON
+  Rendering api/spots/index.json.jbuilder
+  [1m[36mSpot Load (69.2ms)[0m  [1m[34mSELECT "spots".* FROM "spots"[0m
+  ↳ app/views/api/spots/index.json.jbuilder:2
+  Rendered api/spots/_spot.json.jbuilder (0.6ms)
+  Rendered api/spots/_spot.json.jbuilder (0.5ms)
+  Rendered api/spots/_spot.json.jbuilder (0.2ms)
+  Rendered api/spots/_spot.json.jbuilder (0.4ms)
+  Rendered api/spots/_spot.json.jbuilder (1.3ms)
+  Rendered api/spots/index.json.jbuilder (650.9ms)
+Completed 200 OK in 722ms (Views: 355.5ms | ActiveRecord: 319.1ms)
+
+
