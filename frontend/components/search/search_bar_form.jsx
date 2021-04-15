@@ -1,14 +1,14 @@
 import React from 'react';
-import { connect } from 'react-redux'
-import { sendSearchForm } from '../../actions/search_actions';
-import { withRouter, Redirect } from 'react-router-dom';
+// import { connect } from 'react-redux'
+// import { sendSearchForm } from '../../actions/search_actions';
+// import { withRouter, Redirect } from 'react-router-dom';
 
-const mDTP = dispatch => {
+// const mDTP = dispatch => {
 
-  return {
-    sendSearchForm: (form) => dispatch(sendSearchForm(form))
-  }
-}
+//   return {
+//     sendSearchForm: (form) => dispatch(sendSearchForm(form))
+//   }
+// }
 
 class SearchBarForm extends React.Component{
 
@@ -16,28 +16,13 @@ class SearchBarForm extends React.Component{
     super(props)
     this.state = { keyword: "" }
     this.handleEnter = this.handleEnter.bind(this);
-    // debugger
   }
 
   handleEnter(e){
-    // debugger
     if (e.key === 'Enter'){
       e.preventDefault();
-      // debugger
       this.props.sendSearchForm(this.state);
       this.props.history.push('/search');
-    
-      // this.props.history.push({
-      //   pathname: '/search',
-      //   // search: '?query=abc',
-      //   state: { searchForm: { keyword: this.state.keyword } }
-      // })
-      // <Redirect to={{ 
-      //   pathname: "/search",
-      //   state: {
-      //     searchForm: { keyword: this.state.keyword },
-      //   }
-      // }} />
     }
   }
 
@@ -76,4 +61,4 @@ class SearchBarForm extends React.Component{
 
 
 
-export default connect(null, mDTP)(withRouter(SearchBarForm));
+export default SearchBarForm;

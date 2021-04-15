@@ -17,8 +17,7 @@ class SpotIndexItem extends React.Component {
  
     const { name, title, city, price } = this.props.spot;
     const photos = this.props.photos;
-    const first = 1;
-    debugger
+
     return (
   
         <div className="section1-index-item" onClick={this.handleClick}>

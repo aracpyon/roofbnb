@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { logout } from '../../actions/session_actions';
-import Greeting from './greeting';
+import SplashNav from './splash_nav';
 import { openModal } from "../../actions/modal_actions";
 
 const mSTP = ({session, entities}) => ({
@@ -12,4 +12,4 @@ const mDTP = (dispatch) => ({
   openModal: modal => dispatch(openModal(modal))
 })
 
-export default connect(mSTP, mDTP)(Greeting);
+export default connect(mSTP, mDTP)(SplashNav);

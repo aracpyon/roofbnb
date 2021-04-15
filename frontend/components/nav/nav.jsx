@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
 import { withRouter } from 'react-router';
-import SearchBarForm from '../search/search_bar_form';
+import {SearchBarFormContainer} from '../search/search_form_container';
 
-class Greeting extends React.Component {
+class Nav extends React.Component {
   constructor (props){
     super(props);
     this.handleClick = this.handleClick.bind(this);
@@ -41,7 +41,7 @@ class Greeting extends React.Component {
     <div className="nav-bar">
       <div className="nav-left">
         <Link to="/"><img className="logo" src={window.logo} /></Link>
-        <SearchBarForm />
+        <SearchBarFormContainer />
       </div>
       <div className="nav-right">
         {render}  
@@ -51,4 +51,4 @@ class Greeting extends React.Component {
   }
 }
 
-export default withRouter(Greeting);
+export default withRouter(Nav);

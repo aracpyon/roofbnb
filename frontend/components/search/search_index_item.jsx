@@ -20,7 +20,7 @@ class SearchIndexItem extends React.Component{
     return(
       <div className="search-index-items" onClick={this.handleClick}>
         <div className="search-photo-container">
-          <img className="search-photo" src={window.photowall} />
+          <img className="search-photo" src={this.props.photos[0]} />
         </div>
 
         <div className="search-index-info">

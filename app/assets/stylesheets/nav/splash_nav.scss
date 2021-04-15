@@ -1,27 +1,27 @@
-.nav-bar, .nav-right, .nav-right {
+.splash-nav-bar, .splash-nav-right, .splash-nav-right {
   height: 77px;
 }
 
-.nav-bar {
+.splash-nav-bar {
   width: 100%;
   display: flex;
-  position: fixed;
+  position: absolute;
   top: 0;
-  background-color: white;
+  
   justify-content: space-between;
-  border-bottom: 1px solid rgba(0,0,0,0.08);
+  
   z-index: 100;
   
 }
-.nav-left {
+.splash-nav-left {
   width: 100%;
   display: flex;
 }
 
-.nav-right{
+.splash-nav-right{
   width: 546px;
 }
-.nav-right-contents {
+.splash-nav-right-contents {
   
   height: fit-content;
   display: flex;
@@ -32,18 +32,18 @@
 }
 
 
-.nav-contents-div {
-  padding: 13px 20px;
+.splash-nav-contents-div {
+  margin: 10px 20px;
   
   vertical-align: middle;
   &:hover {
-    border-bottom: 2px solid dimgray;
+    border-bottom: 2px solid white;
     padding-bottom: 12px;
     cursor: pointer;
   }
 }
 
-.nav-contents{
+.splash-nav-contents{
   vertical-align: middle;
   align-items: center;
   font-family: 'Sarabun', sans-serif;
@@ -53,7 +53,7 @@
   box-align: center;
   background: transparent;
   box-sizing: border-box;
-  color: #484848;
+  color: white;
 
   font-weight: 600;
   text-decoration: none;
@@ -61,9 +61,9 @@
 
 }
 
-.nav-buttons {
+.splash-nav-buttons {
   margin: 16px 0;
-
+  color: white;
 }
 
 
@@ -73,9 +73,6 @@
 
 .logo{
   cursor: pointer;
-  width: 180px;
-  padding: 10px 22px;
-  font-size: 45px;
-  font-family: 'Roboto';
-  color: orange;
+  width: 100px;
+  padding: 20px 22px;
 }

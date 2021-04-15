@@ -51,25 +51,7 @@
 .form-form {
   padding: 30px 40px;
 }
-// .insession-label {
-  //   // margin-bottom: 50px;
-  //   position: absolute;
-  // }
-  // .input-border {
-    //   position: relative;
-    //   // overflow:hidden;
-    // }
-    // .form > .input-border > .insession-label {
-      //   position: absolute;
-      //   margin-top: 100px;
-      // }
-      
-      // .input-border:focus + .insession-label {
-        
-        // }
-        // label {
-          //   margin-bottom: 50px;
-          // }
+
 .input-border{
   position: relative;
   margin: auto;
@@ -81,11 +63,7 @@
   position: relative;
   width: 95%;
   height: 85%;
-  // height: 60px;
-  // margin-left: 10px;
-  // border: 1px solid grey;
   color: lighten(black, 22%);
-  // border-radius: 10px;
   background-color: transparent;
   outline: none;
 
@@ -102,8 +80,6 @@
   
   &:focus{
     outline: none;
-    // border-width: 2px;
-    // border-color: black;
     transition: all .2s ease-out;
    
   }
@@ -125,59 +101,8 @@
     
   }
 
-  
-  // &, 
-  // &:valid + label {
-  //   position: relative;
-  // }
-  // &.has-value:not(:focus) + label{
-  //   color:lighten(black, 60%);
-  //   transition: top 0.2s;
+} 
 
-  // }
-  
-}
-
-// #nochange {
-//   transition: none;
-//   position: absolute;
-//   top: 8px;
-//   color: gray;
-//   font-size: 12px;
-// }
-
-// #nochange-empty {
-//   transition: none;
-//   position: absolute;
-//   top: 8px;
-//   color: gray;
-//   font-size: 12px;
-// }
-
-// #nochange:focus {
-//   transition: none;
-// }
-
-// .session-input {
-//   &,
-//   & + .insession-label {
-//     position: relative;
-//   }
-// }
-
-// .form-form input:focus ~ label, 
-// .form-form input:valid ~ label {
-//   top: 15px;
-// }
-
-// .form-form input:valid ~ label {
-//   position: relative;
-//   top: 10px;
-//   font-size: 12px;
-
-// }
-
-//css transitions 
 
 .input-border {
   height: 60px;

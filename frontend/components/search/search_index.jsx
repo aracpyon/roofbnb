@@ -6,7 +6,7 @@ import SearchMap from '../map/search_map';
 class SearchIndex extends React.Component{
   constructor(props){
     super(props);
-    // this.props.spots = this.state;
+    
   }
 
   componentDidUpdate(prevProps){
@@ -16,21 +16,20 @@ class SearchIndex extends React.Component{
   }
 
   componentDidMount(){
-    // debugger
     this.props.fetchSearchResult(this.props.searchForm.keyword);
     
   }
+
   render(){
-    // debugger
-    const { spots } = this.props;
-    const placesToStay = spots.length <= 1 ? "Place to stay" : "Places to stay"
-    
+  
+    const { spots, photos } = this.props;
+    const placeToStay = (spots.length >= 1) ? 'Places to Stay' : 'Place to Stay'
     return (
       <div className="search-result-container">
         <div className="search-items-container">
-          <div className="search-items-num">{spots.length} {placesToStay}</div>
+          <div className="search-items-num">{spots.length} {placeToStay}</div>
           {spots.map(spot => {
-            return <SearchIndexItem spot={spot} key={spot.id} />
+            return <SearchIndexItem spot={spot} photos={photos[spot.name]} key={spot.id} />
           })
           }
         </div>

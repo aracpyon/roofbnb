@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SpotsIndexContainer from '../spots/spots_Index_container';
-
+import {SearchFormContainer} from "../search/search_form_container"
 class MainPage extends React.Component {
   render(){
     return(
@@ -9,6 +9,7 @@ class MainPage extends React.Component {
 
         <div className="main-page-image">
           <img className="splash-photowall" src={window.photowall} />
+          <SearchFormContainer />
         </div>
 
         <div className="main-page-content">

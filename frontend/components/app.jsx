@@ -4,7 +4,7 @@ import { AuthRoute } from '../util/route_util';
 // import 'react-dates/initialize';
 
 
-import GreetingContainer from './nav/greeting_container';
+import SplashNavContainer from './nav/splash_nav_container';
 
 import SpotsIndexContainer from './spots/spots_Index_container'
 import MainPage from '../components/main/main_page';
@@ -19,7 +19,7 @@ const App = () => (
   <div>
     <SessionModal />
     <BookingModal />
-    <GreetingContainer />
+    <SplashNavContainer />
     <Switch>
       <Route exact path="/" component={MainPage} />
       <Route path={'/:userId/bookings'} component={BookingListContainer} />
