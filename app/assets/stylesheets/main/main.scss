@@ -101,7 +101,10 @@
           height: 20px;
           border: none;
           outline: none;
-          
+          &::placeholder{
+            font-family: Quicksand, sans-serif;
+            font-size: 14px;
+          }
         }
       }
       .search-form-check-out{
